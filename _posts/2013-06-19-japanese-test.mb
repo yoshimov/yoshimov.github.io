@@ -4,8 +4,6 @@ category : tips
 tagline: "Supporting tagline"
 tags : [japanese]
 ---
-{% include JB/setup %}
-
 #日本語テスト
 
 日本語ページのテストです。
