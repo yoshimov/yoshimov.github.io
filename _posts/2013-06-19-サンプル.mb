@@ -1,5 +1,7 @@
 ---
 layout: post
 ---
+{% include JB/setup %}
+
 ##日本語サンプル
 をWebエディタから登録してみる。
