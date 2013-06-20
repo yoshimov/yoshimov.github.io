@@ -4,6 +4,7 @@ category : tips
 tagline: "Supporting tagline"
 tags : [japanese]
 ---
+{% include JB/setup %}
 
 FSWikiからの移行を想定して。
 [サンプル](サンプル)でリンクができる？
