@@ -2,7 +2,6 @@
 layout: post
 title: Tetheringの切り忘れを防止する
 category: tasker
-tags: [tips]
 ---
 
 概要
