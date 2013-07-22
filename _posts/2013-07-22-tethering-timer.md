@@ -13,9 +13,9 @@ CASIO IS11CAではテザリングができますが、使った後にオフに�
 タブレットとセットで設定します。
 
 これでどんなことができるようになるかというと、
-*スマホを取り出して、振るだけでテザリングを開始
-*タブレットから操作不要ですぐネットが使える
-*使い終わったらタブレットをスリープにするだけで、テザリングも勝手に切れる
+* スマホを取り出して、振るだけでテザリングを開始
+* タブレットから操作不要ですぐネットが使える
+* 使い終わったらタブレットをスリープにするだけで、テザリングも勝手に切れる
 という感じの使い勝手になります。
 
 * 2013.7.19: Time Contextを使った設定に変更しました。
@@ -58,34 +58,35 @@ CASIO IS11CAではテザリングができますが、使った後にオフに�
  * Time Contextを使って一定時間ごとに残り時間をカウントダウンするプロファイルも作っておきます。
 
 ```
-    Profile: Tethering gesture (23)
-    Event: Shake [ Axis:Left-Right Sensitivity:Medium Duration:Medium ]
-    State: Orientation [ Is:Face Up ]
-    State: Variable Value [ Name:%keepTether Op:Isn't Set Value:* ]
-    Enter: Tether timer (22)
-    
-    Profile: Tethering off (28)
-      Event: Shake [ Axis:Left-Right Sensitivity:Medium Duration:Medium ]
-      State: Orientation [ Is:Face Up ]
-      State: Variable Value [ Name:%keepTether Op:Is Set Value:* ]
-      Enter: stopTether (27)
-    
-    Profile: Count Tethering (37)
-      State: Variable Value [ Name:%keepTether Op:Maths: Greater Than Value:0 ]
-      Time: Every 2m
-      Enter: countTether (36)
+ Profile: Tethering gesture (23)
+   Event: Shake [ Axis:Left-Right Sensitivity:Medium Duration:Medium ]
+   State: Orientation [ Is:Face Up ]
+   State: Variable Value [ Name:%keepTether Op:Isn't Set Value:* ]
+   Enter: Tether timer (22)
+
+ Profile: Tethering off (28)
+   Event: Shake [ Axis:Left-Right Sensitivity:Medium Duration:Medium ]
+   State: Orientation [ Is:Face Up ]
+   State: Variable Value [ Name:%keepTether Op:Is Set Value:* ]
+   Enter: stopTether (27)
+
+ Profile: Count Tethering (37)
+   State: Variable Value [ Name:%keepTether Op:Maths: Greater Than Value:0 ]
+   Time: Every 2m
+   Enter: countTether (36)
 ```
 
-* AutoRemoteのメッセージを受けて、テザリングタイマーの残り時間をクリアするようにする。以下では "kt" というメッセージでクリアしています。
+* AutoRemoteのメッセージを受けて、テザリングタイマーの残り時間をクリアするようにする。
+ * 以下では "kt" というメッセージでクリアしています。
 
 ```
-    Profile: Keep Tethering (25)
-      State: AutoRemoteLite [ Configuration:kt ]
-      State: Variable Value [ Name:%keepTether Op:Is Set Value:* ]
-      Enter: keepTether (26)
-    
-    Task: keepTether (26)
-      A1: Variable Set [ Name:%keepTether To:5 Do Maths:Off Append:Off ]
+ Profile: Keep Tethering (25)
+   State: AutoRemoteLite [ Configuration:kt ]
+   State: Variable Value [ Name:%keepTether Op:Is Set Value:* ]
+   Enter: keepTether (26)
+
+ Task: keepTether (26)
+   A1: Variable Set [ Name:%keepTether To:5 Do Maths:Off Append:Off ]
 ```
 
 ##タブレット側（テザリング利用側）
@@ -94,19 +95,19 @@ CASIO IS11CAではテザリングができますが、使った後にオフに�
  * Profileが２つあるのは、一度画面を消して再度表示させた際に、２分待つ間にテザリングが切れてしまうのを防止するためです。
 
 ```
-   Profile: Mobile (9)
-     State: Display State [ Is:On ]
-     State: Wifi Connected [ SSID:xxxx MAC:xxxx IP:* ]
-     Time: Every 2m
-     Enter: Mobile (10)
-    
-    Profile: Mobile Display On
-     Event: Display On
-     State: Wifi Connected [ SSID:xxxx MAC:xxxx IP:* ]
-     Enter: Mobile
-    
-    Task: Mobile (10)
-     A1: AutoRemoteLite Message [ Configuration:Recipient: xxxx Message: kt Package:com.joaomgcd.autoremote.lite Name:AutoRemoteLite Message ]
+ Profile: Mobile (9)
+   State: Display State [ Is:On ]
+   State: Wifi Connected [ SSID:xxxx MAC:xxxx IP:* ]
+   Time: Every 2m
+   Enter: Mobile (10)
+
+ Profile: Mobile Display On
+   Event: Display On
+   State: Wifi Connected [ SSID:xxxx MAC:xxxx IP:* ]
+   Enter: Mobile
+
+ Task: Mobile (10)
+   A1: AutoRemoteLite Message [ Configuration:Recipient: xxxx Message: kt Package:com.joaomgcd.autoremote.lite Name:AutoRemoteLite Message ]
 ```
 
 これで、テザリングタイマーを使って普通にWifiを使って、使い終わったら
