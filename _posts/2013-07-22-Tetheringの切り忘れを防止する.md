@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Tetheringの切り忘れを防止する
-category: Tasker
-tags: [TaskerTips, AndroidTips]
+category: tasker
+tags: [tips]
 ---
 
 概要
