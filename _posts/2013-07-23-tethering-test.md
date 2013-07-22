@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Tetheringの切り忘れを防止する
+title: Tethering timer
 category: tasker
+tags: tips
 ---
 
 #概要
