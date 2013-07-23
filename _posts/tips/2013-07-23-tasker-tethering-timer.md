@@ -4,6 +4,8 @@ title: Tetheringの切り忘れを防止する
 category: tips
 tags: [tasker, android]
 ---
+{% include keywords.md %}
+
 ## 概要
 
 [CASIO IS11CA][]ではテザリングができますが、使った後にオフにし忘れてしまって、
