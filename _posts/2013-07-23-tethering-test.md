@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Tethering timer
-category: tasker
-tags: [tips]
+category: tips
+tags: [tasker, android]
 ---
 {% include JB/setup %}
 
