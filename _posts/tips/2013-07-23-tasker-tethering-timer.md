@@ -5,8 +5,7 @@ category: tips
 tags: [tasker, android]
 ---
 
-概要
-====
+## 概要
 
 CASIO IS11CAではテザリングができますが、使った後にオフにし忘れてしまって、
 バッテリが激減してしまうことがよくあるので、
@@ -25,42 +24,41 @@ CASIO IS11CAではテザリングができますが、使った後にオフに�
 * 2013-7-19 Time Contextを使った設定に変更しました。
 * 2013-7-22 画面再表示時にメッセージを再送信するように変更しました。
 
-環境
-====
+## 環境
 
 * CASIO IS11CA
 * Google Nexus 7
 * Tasker 1.6
 * AutoRemote 2.0.6
 
-準備
-====
+## 準備
 
 * スマートフォンとタブレット双方に、TaskerとAutoRemoteを入れておく。
 * タブレット側のAutoRemoteに、スマートフォンのAutoRemoteを登録しておく。
 
-設定
-====
+## 設定
 
-## スマートフォン側（テザリング提供側）
+### スマートフォン側（テザリング提供側）
 
 * 以下のようなタイマーでテザリングを切るタスクを作って、ジェスチャーなどから起動するようにしておく。以下は５分で切る例です。
 
-```
- Task: Tether timer (22)
-   A1: Notify LED [ Title:Tethering Text: Icon:<icon> Number:3 Colour:Blue Rate:525 Priority:3 ] 
-   A2: WiFi Tether [ Set:On ] 
-   A3: Variable Set [ Name:%keepTether To:5 Do Maths:Off Append:Off ]
 
- Task: stopTether (27)
-   A1: WiFi Tether [ Set:Off ] 
-   A2: Notify Cancel [ Title:Tethering Warn Not Exist:Off ] 
-   A3: Variable Clear [ Name:%keepTether Pattern Matching:Off ]
+    Task: Tether timer (22)
+      A1: Notify LED [ Title:Tethering Text: Icon:<icon> Number:3 Colour:Blue Rate:525 Priority:3 ] 
+      A2: WiFi Tether [ Set:On ] 
+      A3: Variable Set [ Name:%keepTether To:5 Do Maths:Off Append:Off ]
 
- Task: countTether (36)
-   A1: Variable Subtract [ Name:%keepTether Value:2 ] 
-   A2: Perform Task [ Name:stopTether Stop:Off Priority:5 Parameter 1 (%par1): Parameter 2 (%par2): Return Value Variable: ] If [ %keepTether < 1 ]
-```
+
+    Task: stopTether (27)
+      A1: WiFi Tether [ Set:Off ] 
+      A2: Notify Cancel [ Title:Tethering Warn Not Exist:Off ] 
+      A3: Variable Clear [ Name:%keepTether Pattern Matching:Off ]
+
+
+    Task: countTether (36)
+      A1: Variable Subtract [ Name:%keepTether Value:2 ] 
+      A2: Perform Task [ Name:stopTether Stop:Off Priority:5 Parameter 1 (%par1): Parameter 2 (%par2): Return Value Variable: ] If [ %keepTether < 1 ]
+
 
 * ジェスチャーでテザリングを開始するプロファイルの例です。
  * Time Contextを使って一定時間ごとに残り時間をカウントダウンするプロファイルも作っておきます。
