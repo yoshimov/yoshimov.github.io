@@ -11,7 +11,7 @@ markdown: kramdown
 # so be sure to set them if your theme uses them.
 #
 title : Yoshimopedia
-tagline: Site Tagline
+tagline: "Mini encyclopedia by Yoshimov"
 author :
   name : Yoshimov
   email : yoshimov@pobox.com
@@ -117,7 +117,7 @@ JB :
   # Set 'provider' to false to turn sharing off globally.
   #
   sharing :
-    provider : plusone
+    provider : false
     
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:
