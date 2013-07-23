@@ -41,8 +41,8 @@ tags: [tasker, android]
 
 ### スマートフォン側（テザリング提供側）
 
-* 以下のようなタイマーでテザリングを切るタスクを作って、ジェスチャーなどから起動するようにしておく。
-    * 以下は５分で切る例です。
+* 下記のようなタイマーでテザリングを切るタスクを作って、ジェスチャーなどから起動するようにしておく。
+   以下は５分で切る例です。
 
         Task: Tether timer (22)
             A1: Notify LED [ Title:Tethering Text: Icon:<icon> Number:3 Colour:Blue Rate:525 Priority:3 ] 
@@ -60,7 +60,8 @@ tags: [tasker, android]
 
 
 * ジェスチャーでテザリングを開始するプロファイルの例です。
- * Time Contextを使って一定時間ごとに残り時間をカウントダウンするプロファイルも作っておきます。
+
+   Time Contextを使って一定時間ごとに残り時間をカウントダウンするプロファイルも作っておきます。
 
         Profile: Tethering gesture (23)
             Event: Shake [ Axis:Left-Right Sensitivity:Medium Duration:Medium ]
@@ -80,7 +81,7 @@ tags: [tasker, android]
             Enter: countTether (36)
 
 * AutoRemoteのメッセージを受けて、テザリングタイマーの残り時間をクリアするようにする。
- * 以下では "kt" というメッセージでクリアしています。
+   以下では "kt" というメッセージでクリアしています。
 
         Profile: Keep Tethering (25)
             State: AutoRemoteLite [ Configuration:kt ]
@@ -93,8 +94,9 @@ tags: [tasker, android]
 ### タブレット側（テザリング利用側）
 
 * テザリング中は、一定時間毎にAutoRemoteのメッセージを送るタスクを作ります。
- * 以下はディスプレイがオンの間は２分おきにメッセージを送る例です。
- * Profileが２つあるのは、一度画面を消して再度表示させた際に、２分待つ間にテザリングが切れてしまうのを防止するためです。
+   以下はディスプレイがオンの間は２分おきにメッセージを送る例です。
+
+   Profileが２つあるのは、一度画面を消して再度表示させた際に、２分待つ間にテザリングが切れてしまうのを防止するためです。
 
         Profile: Mobile (9)
             State: Display State [ Is:On ]
