@@ -42,7 +42,7 @@ tags: [tasker, android]
 ### スマートフォン側（テザリング提供側）
 
 * 以下のようなタイマーでテザリングを切るタスクを作って、ジェスチャーなどから起動するようにしておく。
- * 以下は５分で切る例です。
+    * 以下は５分で切る例です。
 
         Task: Tether timer (22)
             A1: Notify LED [ Title:Tethering Text: Icon:<icon> Number:3 Colour:Blue Rate:525 Priority:3 ] 
