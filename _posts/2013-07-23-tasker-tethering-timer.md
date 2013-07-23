@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Tethering timer
+title: Tetheringの切り忘れを防止する
 category: tips
 tags: [tasker, android]
 ---
 
-# 概要
+## 概要
 
 CASIO IS11CAではテザリングができますが、使った後にオフにし忘れてしまって、
 バッテリが激減してしまうことがよくあるので、
@@ -27,4 +27,5 @@ CASIO IS11CAではテザリングができますが、使った後にオフに�
 
     Task: test
 
+## テスト
 
