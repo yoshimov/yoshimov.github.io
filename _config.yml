@@ -29,6 +29,24 @@ author :
 #
 production_url : http://yoshimov.github.io
 
+navigation:
+- text: Home
+  url: /
+  icon: icon-home
+- text: About
+  url: /about.html
+- text: Layouts
+  url: /layouts/
+  children:
+  - text: Default
+    url: /layouts/default.html
+  - text: Sidebar Left
+    url: /layouts/sidebar-left.html
+  - text: No Sidebar
+    url: /layouts/no-sidebar.html
+
+paginate: 10
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :

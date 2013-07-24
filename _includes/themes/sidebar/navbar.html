@@ -18,7 +18,7 @@
             {% if link.external %}
                 {% assign link_url = link.url %}
             {% else %}
-                {% capture link_url %}{{ site.baseurl }}{{ link.url }}{% endcapture %}
+                {% capture link_url %}{{ site.production_url }}{{ link.url }}{% endcapture %}
             {% endif %}
 
             {% if link.children %}
@@ -29,7 +29,7 @@
                     {% if childlink.external %}
                         {% assign childlink_url = childlink.url %}
                     {% else %}
-                        {% capture childlink_url %}{{ site.baseurl }}{{ childlink.url }}{% endcapture %}
+                        {% capture childlink_url %}{{ site.production_url }}{{ childlink.url }}{% endcapture %}
                     {% endif %}
                     <li><a href="{{ childlink_url }}">
                         {% if childlink.icon %}
@@ -49,7 +49,7 @@
                 </a></li>
             {% endif %}
         {% endfor %}
-            <li><a href="{{ site.baseurl }}/rss.xml"><i class="icon-rss" alt="RSS" title="RSS"></i></a></li>
+            <li><a href="{{ site.production_url }}/rss.xml"><i class="icon-rss" alt="RSS" title="RSS"></i></a></li>
         </ul>
         </div>
     </div>
