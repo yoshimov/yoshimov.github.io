@@ -1,0 +1,23 @@
+{% include themes/sidebar/header.html %}
+<div class="row">
+    <div class="span12 wrapper">
+        <div class="row">
+            <div class="span8">
+                <div class="content">
+                    {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+                    <ul class="inline">
+                        {% if page.author %}<li><span class="vcard"><i class="icon-user"></i> <span class="fn">{{ page.author }}</span></span></li>{% endif %}
+                        {% if page.date %}<li><abbr class="published" title="{{ page.date | date: "%a, %d %b %Y %H:%M:%S %z" }}"><i class="icon-calendar"></i> {{ page.date | date: "%b %d, %Y" }}</abbr></li>{% endif %}
+                    </ul>
+                    {{ content }}
+                </div>
+            </div>
+            <div class="span4">
+                <div class="sidebar">
+                    {% include themes/sidebar/sidebar.html %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include themes/sidebar/footer.html %}
