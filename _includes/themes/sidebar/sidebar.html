@@ -27,10 +27,24 @@
 <div class="widget-wrapper">
 <h3 class="widget-title">Categories</h3>
 <ul>
-    {% for category in site.categories %}
-     <li><a href="{{ site.production_url }}/category/#{{ category }}-ref">
-     {{ category | join: "/" }} <span>{{ site.categories[category].size }}</span>
-     </a></li>
+  {% assign categories_list = site.categories %}
+  {% include JB/categories_list %}
+</ul>
+</div>
+
+<div class="widget-wrapper">
+<h3 class="widget-title">Tags</h3>
+<ul>
+  {% assign tags_list = site.tags %}
+  {% if tags_list.first[0] == null %}
+    {% for tag in tags_list %} 
+    	<a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }} <span>{{ site.tags[tag].size }}</span></a>&nbsp;
     {% endfor %}
+  {% else %}
+    {% for tag in tags_list %} 
+    	<a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}-ref">{{ tag[0] }} <span>{{ tag[1].size }}</span></a>&nbsp;
+    {% endfor %}
+  {% endif %}
+
 </ul>
 </div>
