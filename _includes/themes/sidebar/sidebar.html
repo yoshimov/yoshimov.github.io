@@ -13,7 +13,7 @@
 {% for post in site.posts %}
     {% capture next %}{{ post.date | date: "%B %Y" }}{% endcapture %}
     {% if next != current %}
-        <li><a href="{{ site.production_url }}/archive.html#{{ post.date | date: "%B%Y" }}">{{ next }}</a></li>
+        <li><a href="{{ site.production_url }}/archive/#{{ post.date | date: "%B%Y" }}">{{ next }}</a></li>
         {% assign current = next %}
     {% endif %}
 {% endfor %}
@@ -25,13 +25,13 @@
 <ul>
   {% if site.categories.first[0] == null %}
     {% for category in site.categories %}
-     <li><a href="{{ site.production_url }}/categories.html#{{ category }}-ref">
+     <li><a href="{{ site.production_url }}/categories/#{{ category }}-ref">
      {{ category | join: "/" }} <span>{{ site.categories[category].size }}</span>
      </a></li>
     {% endfor %}
   {% else %}
     {% for category in site.categories %}
-     <li><a href="{{ site.production_url }}/categories.html#{{ category[0] }}-ref">
+     <li><a href="{{ site.production_url }}/categories/#{{ category[0] }}-ref">
      {{ category[0] | join: "/" }}</span>
      </a></li>
     {% endfor %}

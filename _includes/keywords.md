@@ -1,4 +1,4 @@
-[CASIO IS11CA]: /gadget/casio-is11ca
+[CASIO IS11CA]: /CASIO+IS11CA
 [AutoRemote]: http://joaoapps.com/autoremote/
 [Tasker]: http://tasker.dinglisch.net/
 [Google Nexus 7]: /gadget/google-nexus7

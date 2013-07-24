@@ -34,7 +34,7 @@ navigation:
   url: /
   icon: icon-home
 - text: About
-  url: /about
+  url: /about/yoshimov
 - text: Products
   url: /category/#product-ref
   children:

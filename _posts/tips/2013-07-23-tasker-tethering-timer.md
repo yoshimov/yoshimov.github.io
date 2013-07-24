@@ -2,7 +2,7 @@
 layout: post
 title: Tetheringの切り忘れを防止する
 category: tips
-tags: [tasker, android]
+tags: [tasker, android, tips]
 ---
 {% include keywords.md %}
 
