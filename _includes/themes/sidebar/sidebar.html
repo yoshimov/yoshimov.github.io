@@ -1,5 +1,5 @@
 <div class="widget-wrapper">
-{% include plusone.md %}
+{% include plusone.html %}
 </div>
 
 <div class="widget-wrapper">
@@ -27,18 +27,10 @@
 <div class="widget-wrapper">
 <h3 class="widget-title">Categories</h3>
 <ul>
-  {% if site.categories.first[0] == null %}
     {% for category in site.categories %}
-     <li><a href="{{ site.production_url }}/categories/#{{ category }}-ref">
+     <li><a href="{{ site.production_url }}/category/#{{ category }}-ref">
      {{ category | join: "/" }} <span>{{ site.categories[category].size }}</span>
      </a></li>
     {% endfor %}
-  {% else %}
-    {% for category in site.categories %}
-     <li><a href="{{ site.production_url }}/categories/#{{ category[0] }}-ref">
-     {{ category[0] | join: "/" }}</span>
-     </a></li>
-    {% endfor %}
-  {% endif %}
 </ul>
 </div>
