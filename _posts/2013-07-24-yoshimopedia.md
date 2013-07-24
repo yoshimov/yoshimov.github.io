@@ -1,21 +1,21 @@
 ---
 layout: post
 category: about
-title: Yoshimopedia�Ƃ�
+title: Yoshimopediaとは
 ---
-## Yoshimopedia�Ƃ�
+## Yoshimopediaとは
 
-���̃T�C�g�̖��O�ł��B
-������Ƃ킩��ɂ����ł����AYoshimov��Encyclopedia��������������ł��B
+このサイトの名前です。
+ちょっとわかりにくいですが、YoshimovとEncyclopediaをくっつけた造語です。
 
-�G���Ȃ��Ƃ��S�Ȏ��T�̂悤�ɏo�Ă���T�C�g�ɂȂ�΂����Ȃ��A
-�ƌ����Ӗ��ŕt�������O�ł����A���O�����������ł��ˁB
+雑多なことが百科辞典のように出てくるサイトになればいいなぁ、
+と言う意味で付けた名前ですが、名前負けしそうですね。
 
-�Ƃ͂����A�ʂ�Wikipedia�̂悤�ȍ����Ȃ��Ƃ�������͑S�R�Ȃ��ł��B
+とはいえ、別にWikipediaのような高尚なことをやるつもりは全然ないです。
 
-�Ȃ��v���ȗ�����Ă��邩�Ƃ����ƁA�A�[���Ӗ��͂���܂���B
-��C��������������ł��B
+なんでvが省略されているかというと、、深い意味はありません。
+語呂が悪かったからです。
 
-## �T�[�o�ɂ���
+## サーバについて
 
-���̃T�[�o�́A[GitHub Pages](http://pages.github.com/)��ŉ^�c����\��ł��B
+このサーバは、[GitHub Pages](http://pages.github.com/)上で運営する予定です。
