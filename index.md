@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 ---
 <div class="hfeed">
 {% for post in paginator.posts %}
