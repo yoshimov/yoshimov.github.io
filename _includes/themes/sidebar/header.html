@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ content | strip_html | truncatewords: 50 }}{% endif %}">
     <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author.name }}{% endif %}">
@@ -43,7 +43,7 @@
     <div id="header" class="row">
         <div class="span12">
             <p class="site-name"><a rel="home" title="{{ site.title }}" href="{{ site.production_url }}/">{{ site.title }}</a></p>
-            {% if site.description %}<p class="site-description">{{ site.description }}</p>{% endif %}
+            {% if site.tagline %}<p class="site-description">{{ site.tagline }}</p>{% endif %}
             {% include themes/sidebar/navbar.html %}
         </div>
     </div>

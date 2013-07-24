@@ -34,16 +34,14 @@ navigation:
   url: /
   icon: icon-home
 - text: About
-  url: /about.html
-- text: Layouts
-  url: /layouts/
+  url: /about
+- text: Products
+  url: /category/#product-ref
   children:
-  - text: Default
-    url: /layouts/default.html
-  - text: Sidebar Left
-    url: /layouts/sidebar-left.html
-  - text: No Sidebar
-    url: /layouts/no-sidebar.html
+  - text: isobooster
+    url: /product/isobooster
+  - text: Addrex
+    url: /product/addrex
 
 paginate: 10
 
