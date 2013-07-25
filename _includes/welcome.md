@@ -1,4 +1,4 @@
-[Yoshimopedia](/about/yoshimopedia)�ւ悤�����B
+[Yoshimopedia](/about/yoshimopedia)へようこそ。
 
-�܂����̃T�C�g�͍\�z���̂��߁A�L����URL�Ȃǂ��ύX�ɂȂ�ꍇ������܂��B
-�����ӂ��������B
+まだこのサイトは構築中のため、記事のURLなどが変更になる場合があります。
+ご注意ください。
