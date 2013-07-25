@@ -12,7 +12,7 @@ layout: post
 <pre>public void reduce(KeyWritable key,
 Iterator&lt;ValueWritable&gt; it,
 OutputCollector&lt;KeyWritable, ValueWritable&gt; output,
-Reporter report) throws IOException {
+Reporter report) throws IOException \{
 </pre>
 <p>のような感じで、valueのiteratorが渡されるが、</p>
 <pre>it.next()

@@ -16,7 +16,7 @@ layout: post
 <li>[Tools]-[Script]-[Script Editor]を選んで、スクリプトエディタを開きます。</li>
 <li>データ収集関数を記述します。以下はその例です。</li>
 </ul>
-<pre>function fetch_json() {
+<pre>function fetch_json() \{
  var url=&quot;http://tepco-usage-api.appspot.com/latest.json&quot;;
  var result= UrlFetchApp.fetch(url);
  var obj = Utilities.jsonParse(result.getContentText());
@@ -33,7 +33,7 @@ layout: post
  cell.offset(index, 5).setValue(obj.usage);
  cell.offset(index, 6).setValue(obj.capacity);
  cell.offset(index, 7).setValue(obj.saving);
-}
+\}
 </pre>
 <p>このあたりで、取得したデータをシート内のセルに入力しています。重複を避ける場合は、入力する前にシートをスキャンするなどの工夫が必要です。</p>
 <h4>トリガーを設定</h4>

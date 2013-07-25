@@ -42,19 +42,19 @@ $wc.Proxy = $proxy
 <ul>
 <li>407エラーをcatchして再度リクエスト</li>
 </ul>
-<pre>try {
+<pre>try \{
   $wc.DownloadFile(&quot;http://hoge&quot;, &quot;hoge&quot;)
-} catch [System.Net.WebException] {
-  if ($_.Exception -match &quot;.*\(407\).*&quot;) {
+\} catch [System.Net.WebException] \{
+  if ($_.Exception -match &quot;.*\(407\).*&quot;) \{
     # ダイアログを表示してログイン情報を取得
     $cred = get-credential
     $wc.Proxy.Credentials = $cred.GetNetworkCredential()
     # 再度ダウンロード
     $wc.DownloadFile(&quot;http://hoge&quot;, &quot;hoge&quot;)
-  } else {
+  \} else \{
     throw
-  }
-}
+  \}
+\}
 </pre>
 <p>WebClientではなくWebRequestを使っている場合、１つのRequestから複数のリクエストは出せないため、再度通信を行うには新しくRequestを生成する必要があります。</p>
 <p><span class="error">commentプラグインは存在しません。</span> </p>

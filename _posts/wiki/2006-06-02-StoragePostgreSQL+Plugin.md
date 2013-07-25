@@ -47,7 +47,7 @@ layout: post
 <h3>問題点</h3>
 <h4>mod_perl使用時にconnectionが切断されないまま残る</h4>
 <p>これは、</p>
-<pre>undef $wiki-&gt;{storage};
+<pre>undef $wiki-&gt;\{storage\};
 </pre>
 <p>という記述を、</p>
 <ul>
@@ -68,10 +68,10 @@ layout: post
 <h4>コメントが反映されない</h4>
 <p>PostgreSQLに入れたときに、本文の改行が\r\nになってしまって、コメントプラグインの正規表現に引っかからなくなってしまうみたいです。</p>
 <p>とりあえず、CommentHandler.pm 内の二箇所ある</p>
-<pre>if(/^{{comment\s*.*}}$/ &amp;&amp; $flag==0){
+<pre>if(/^\{\{comment\s*.*\}\}$/ &amp;&amp; $flag==0)\{
 </pre>
 <p>という行を</p>
-<pre>if(/^{{comment\s*.*}}/ &amp;&amp; $flag==0){
+<pre>if(/^\{\{comment\s*.*\}\}/ &amp;&amp; $flag==0)\{
 </pre>
 <p>と変更すると動きます。（$を取る）</p>
 <h3>コメント</h3>

@@ -26,14 +26,14 @@ layout: post
 <pre>src/ql/src/java/org/apache/hadoop/hive/ql/exec/Utilities.java
 </pre>
 <p>を編集して、getMapRedWorkメソッドを以下のように修正します。</p>
-<pre> public static mapredWork getMapRedWork (Configuration job) {
+<pre> public static mapredWork getMapRedWork (Configuration job) \{
    mapredWork gWork = null;
-   try {
-     synchronized(gWorkMap) {
+   try \{
+     synchronized(gWorkMap) \{
        gWork = gWorkMap.get(getJobName(job));
-     }
-     if(gWork == null) {
-       synchronized (Utilities.class) {
+     \}
+     if(gWork == null) \{
+       synchronized (Utilities.class) \{
          if(gWork != null)
            return (gWork);
 	  Path planPath = new Path(HiveConf.getVar(job, HiveConf.ConfVars.PLAN));
@@ -45,14 +45,14 @@ layout: post
          gWork = ret;
          gWork.initialize();
          gWorkMap.put(getJobName(job), gWork);
-       }
-     }
+       \}
+     \}
      return (gWork);
-   } catch (Exception e) {
+   \} catch (Exception e) \{
      e.printStackTrace();
      throw new RuntimeException (e);
-   }
- }
+   \}
+ \}
 </pre>
 <p>要は、キャッシュへのシンボリックリンクを当てにせず、通常の方法でクエリプランを読み込むように修正します。</p>
 <h4>antを実行</h4>

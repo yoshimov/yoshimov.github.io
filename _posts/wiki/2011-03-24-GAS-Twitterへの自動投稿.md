@@ -27,7 +27,7 @@ layout: post
 <li>[Tools]-[Scripts]-[Script Editor]からスクリプトエディタを起動します。</li>
 <li>まずは以下のような認証用の関数を入力して、保存します。</li>
 </ul>
-<pre>function test_oauth() {
+<pre>function test_oauth() \{
  // Setup OAuthServiceConfig
  var oAuthConfig = UrlFetchApp.addOAuthService(&quot;twitter&quot;);
  oAuthConfig.setAccessTokenUrl(&quot;http://api.twitter.com/oauth/access_token&quot;);
@@ -39,13 +39,13 @@ layout: post
  // Setup optional parameters to point request at OAuthConfigService.  The &quot;twitter&quot;
  // value matches the argument to &quot;addOAuthService&quot; above.
  var options =
-   {
+   \{
      &quot;oAuthServiceName&quot; : &quot;twitter&quot;,
      &quot;oAuthUseToken&quot; : &quot;always&quot;,
      &quot;method&quot; : &quot;GET&quot;
-   };
+   \};
  var result = UrlFetchApp.fetch(&quot;http://api.twitter.com/1/account/verify_credentials.json&quot;, options);
-}
+\}
 </pre>
 <ul>
 <li>[File]-[Properties]を開いて、Script propertiesにtwitterConsumerKeyとして、前述のComsumer Keyを、twitterConsumerSecretとして、前述のConsumer Secretを追加します。</li>
@@ -55,7 +55,7 @@ layout: post
 </ul>
 <h4><a href="http://www.twitter.com">Twitter</a>投稿関数を用意</h4>
 <p>あとは、JavaScriptの関数で<a href="http://www.twitter.com">Twitter</a>への投稿を記述します。以下は投稿のための関数の例。</p>
-<pre>function post_status(status) {
+<pre>function post_status(status) \{
  // Setup OAuthServiceConfig
  var oAuthConfig = UrlFetchApp.addOAuthService(&quot;twitter&quot;);
  oAuthConfig.setAccessTokenUrl(&quot;http://api.twitter.com/oauth/access_token&quot;);
@@ -67,13 +67,13 @@ layout: post
  // Setup optional parameters to point request at OAuthConfigService.  The &quot;twitter&quot;
  // value matches the argument to &quot;addOAuthService&quot; above.
  var options =
-   {
+   \{
      &quot;oAuthServiceName&quot; : &quot;twitter&quot;,
      &quot;oAuthUseToken&quot; : &quot;always&quot;,
      &quot;method&quot; : &quot;POST&quot;
-   };
+   \};
  var result = UrlFetchApp.fetch(&quot;http://api.twitter.com/1/statuses/update.json?status=&quot; + encodeURIComponent(status), options);
-}
+\}
 </pre>
 <p>ポイントは以下の点。</p>
 <ul>

@@ -5,7 +5,7 @@ layout: post
 <p>Palm OS Developer Suite (prc-tools)とCodeWarriorとのソースコード非互換について、気が付いた点です。</p>
 <h3>一時領域の記述方法</h3>
 <p>CodeWarriorでは、</p>
-<pre>&amp;(RectangleType){{0,0},{10,10}}
+<pre>&amp;(RectangleType)\{\{0,0\},\{10,10\}\}
 </pre>
 <p>のような記述で、一時領域のポインタを渡すことができたんですが、PODSでは、ちゃんと</p>
 <pre>RectangleType rect;

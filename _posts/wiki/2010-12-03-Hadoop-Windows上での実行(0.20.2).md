@@ -20,10 +20,10 @@ layout: post
 <p>まずはtar.gzをダウンロードしてきて、任意の場所に展開します。Program Files以外の場所のほうが扱いやすいです。</p>
 <h4>バッチファイルの修正</h4>
 <p>bin/hadoopを編集して、</p>
-<pre>JAVA_PLATFORM=`CLASSPATH=${CLASSPATH} ${JAVA} -Xmx32m org.apache.hadoop.util.PlatformName | sed -e &quot;s/ /_/g&quot;`
+<pre>JAVA_PLATFORM=`CLASSPATH=$\{CLASSPATH\} $\{JAVA\} -Xmx32m org.apache.hadoop.util.PlatformName | sed -e &quot;s/ /_/g&quot;`
 </pre>
 <p>という行を、</p>
-<pre>JAVA_PLATFORM=`CLASSPATH=&quot;${CLASSPATH}&quot; &quot;${JAVA}&quot; -Xmx32m org.apache.hadoop.util.PlatformName | sed -e &quot;s/ /_/g&quot;`
+<pre>JAVA_PLATFORM=`CLASSPATH=&quot;$\{CLASSPATH\}&quot; &quot;$\{JAVA\}&quot; -Xmx32m org.apache.hadoop.util.PlatformName | sed -e &quot;s/ /_/g&quot;`
 </pre>
 <p>と修正します。（ダブルクォートを加える）</p>
 <h4>設定ファイルの編集</h4>

@@ -10,9 +10,9 @@ layout: post
 <p>Tungsten T3でこれを有効にするには、Palmの<a href="http://pluggedin.palm.com/">Plugged.in</a>から&quot;Tungsten T3 DIA Compatibility PRCs&quot;をダウンロードしてインストールする必要がある。これらのprcは、各アプリケーションにバンドルすることが推奨されている。</p>
 <p>導入された仮想シルクの有無は、以下のコードで判定する。</p>
 <pre>err = FtrGet(pinCreator, pinFtrAPIVersion, &amp;version);
-if (!err &amp;&amp; version) {
+if (!err &amp;&amp; version) \{
  //PINS exists
-}
+\}
 </pre>
 <p>仮想シルクに関する設定は、frmLoadFormイベントが発行される毎に設定する。</p>
 <p>まずは、以下のコードでDynamic Input Areaのポリシーを設定する。</p>

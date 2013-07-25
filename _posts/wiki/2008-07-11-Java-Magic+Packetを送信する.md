@@ -25,18 +25,18 @@ if (opt.h) cli.usage()
 <p>MACアドレスを取得</p>
 <pre>String mac = opt.i.replaceAll(&quot;-&quot;, &quot;&quot;).replaceAll(&quot;:&quot;, &quot;&quot;)
 byte[] macBytes = new byte[6]
-for (pos in 0..5) {
+for (pos in 0..5) \{
     macBytes[pos] = Integer.valueOf(mac.substring(pos*2,pos*2+2), 16)
-}
+\}
 </pre>
 <p>パケットデータを構築</p>
 <pre>byte[] data = new byte[6 + 16 * 6]
-for (i in 0..5) {
+for (i in 0..5) \{
    data[i] = 0xff
-}
-for (i in 1..16) {
+\}
+for (i in 1..16) \{
    System.arraycopy(macBytes, 0, data, i * 6, 6)
-}
+\}
 </pre>
 <p>データ送信</p>
 <pre>InetAddress address = InetAddress.getByName(opt.b)

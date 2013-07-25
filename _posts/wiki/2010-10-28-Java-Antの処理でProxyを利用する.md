@@ -15,7 +15,7 @@ layout: post
 <pre>&lt;target name=&quot;proxy&quot;&gt;
  &lt;property name=&quot;proxy.host&quot; value=&quot;proxy.somewhere.com&quot; /&gt;
  &lt;property name=&quot;proxy.port&quot; value=&quot;8080&quot; /&gt;
- &lt;setproxy proxyhost=&quot;${proxy.host}&quot; proxyport=&quot;${proxy.port}&quot; /&gt;
+ &lt;setproxy proxyhost=&quot;$\{proxy.host\}&quot; proxyport=&quot;$\{proxy.port\}&quot; /&gt;
 &lt;/target&gt;
 </pre>
 <ul>

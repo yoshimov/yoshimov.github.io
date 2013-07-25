@@ -196,8 +196,8 @@ layout: post
 <p>以下にオンラインで<a href="/?page=X%2DFace" class="wikipage">X-Face</a> の作成、表示ができるページがあります。</p>
 <p><a href="http://www.dairiki.org/xface/">http://www.dairiki.org/xface/</a></p>
 <p>以下は私の <a href="/?page=X%2DFace" class="wikipage">X-Face</a> の例です．</p>
-<pre>X-Face: 3/+^m+Z,i{)X02xd8/:u~H1eJ:y{?Yy@N@T-K==(s\q'qnKpHvwJ1&amp;e5;0^2Gd@sex=x*(
- I`{kdl@ILwZM1@B}I(.grzN`aV~OZRzHEnnUNPQGr3Df(1P+:~kz@16a4*mXL;i].M!p{_dr@-Yk
+<pre>X-Face: 3/+^m+Z,i\{)X02xd8/:u~H1eJ:y\{?Yy@N@T-K==(s\q'qnKpHvwJ1&amp;e5;0^2Gd@sex=x*(
+ I`\{kdl@ILwZM1@B\}I(.grzN`aV~OZRzHEnnUNPQGr3Df(1P+:~kz@16a4*mXL;i].M!p\{_dr@-Yk
  [F]'uv-$+'F
 </pre>
 <h3>免責</h3>

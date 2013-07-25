@@ -23,9 +23,9 @@ typedef __int64 jlong;
 <pre>private static synchronized native int nativeInstallFile(byte[] user, byte[] filename);
 </pre>
 <p>というような native メソッドを持ったクラスを用意する。また、このクラスの static initializer あたりに、</p>
-<pre>static {
+<pre>static \{
   System.loadLibrary(&quot;clipsyncjni&quot;);
-}
+\}
 </pre>
 <p>というような、DLLを読み込むコードを入れておく。クラスをコンパイルしたら、</p>
 <pre>javah クラス名

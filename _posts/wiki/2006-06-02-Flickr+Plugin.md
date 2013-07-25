@@ -9,7 +9,7 @@ layout: post
 <h3>使い方</h3>
 <h4>flickr_badge</h4>
 <p><a href="http://flickr.com/">Flickr</a>の縦表示HTML Badgeを表示します。</p>
-<pre>{{flickr_badge ID,表示枚数,[random|latest]}}
+<pre>\{\{flickr_badge ID,表示枚数,[random|latest]\}\}
 </pre>
 <p>と指定します。</p>
 <ul>
@@ -17,7 +17,7 @@ layout: post
 </ul>
 <h4>flickr_zeitgeist</h4>
 <p>Flashで写真を次々表示する、<a href="http://flickr.com/">Flickr</a>のZeitgeistを表示します。</p>
-<pre>{{flickr_zeitgeist ID,scope}}
+<pre>\{\{flickr_zeitgeist ID,scope\}\}
 </pre>
 <p>と指定します。scopeは0が自分のみ、1がcontacts、2が自分とcontactsとなります。</p>
 <ul>

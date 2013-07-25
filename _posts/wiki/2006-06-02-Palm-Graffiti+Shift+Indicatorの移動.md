@@ -5,10 +5,10 @@ layout: post
 <p>GSI には，FrmGetObjectIndex が使えないため，以下のようなコードで index を取得する．</p>
 <pre>UInt16 i, numObjects;
 numObjects = FrmGetNumberOfObjects(frmP);
-for (i=0; i&lt;numObjects; i++) {
+for (i=0; i&lt;numObjects; i++) \{
   if (FrmGetObjectType(frmP, i) == frmGraffitiStateObj)
     return(i);
-}
+\}
 return(-1);
 </pre>
 <p>後は，他の Object と同じように，</p>

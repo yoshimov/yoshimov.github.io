@@ -22,11 +22,11 @@ string = new String(bytes, &quot;JISAutoDetect&quot;);
 <p>具体的には、文字列の読み込み部分（Category#parseCategories の name を読み込む部分、AbstractRecord#readCString）を以下のように一旦バッファリングするように変更します。</p>
 <pre>ByteArrayOutputStream bos = new ByteArrayOutputStream();
 
-do {
+do \{
   c = in.read();
   if (c != 0)
     bos.write(c);
- } while (c &gt; 0);
+ \} while (c &gt; 0);
 
  bos.flush();
  bos.close();

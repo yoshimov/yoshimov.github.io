@@ -21,12 +21,12 @@ FileSystem fs = FileSystem.get(URI.create(&quot;hdfs://hoge:9000/&quot;), conf);
 <pre>FileStatus[] statusList = fs.listStatus(new Path(&quot;work&quot;))
 </pre>
 <p>という感じでリストを取得して、</p>
-<pre>for (FileStatus status: statusList) {
- if (status.isDir()) {
+<pre>for (FileStatus status: statusList) \{
+ if (status.isDir()) \{
   // ディレクトリの処理
- } else {
+ \} else \{
   // ファイルの処理
- }
+ \}
 </pre>
 <p>という感じで処理する。</p>
 <h4>ファイルの読み込み</h4>
@@ -39,8 +39,8 @@ FileSystem fs = FileSystem.get(URI.create(&quot;hdfs://hoge:9000/&quot;), conf);
 <pre>SequenceFile.Reader reader = new SequenceFile.Reader(fs, path, fs.getConf());
 Writable key = new KeyWritable()
 Writable value = new ValueWritable()
-while (reader.next(key, value)) {
+while (reader.next(key, value)) \{
  ..
-}
+\}
 </pre>
 <p>という感じで行う。</p>

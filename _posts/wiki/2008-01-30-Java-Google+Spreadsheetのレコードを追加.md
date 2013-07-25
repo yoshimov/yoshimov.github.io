@@ -21,14 +21,14 @@ URL metafeedUrl = new URL(&quot;http://spreadsheets.google.com/feeds/spreadsheet
 </pre>
 <p>まず、レコードを追加するSpreadsheetを特定。</p>
 <pre>SpreadsheetFeed feed = service.getFeed(metafeedUrl, SpreadsheetFeed.class)
-SpreadsheetEntry sheet = feed.getEntries().find {
+SpreadsheetEntry sheet = feed.getEntries().find \{
   it.getTitle().getPlainText().equals(&quot;家計簿&quot;)
-}
+\}
 </pre>
 <p>次にワークシートを特定。</p>
-<pre>WorksheetEntry work = sheet.getWorksheets().find {
+<pre>WorksheetEntry work = sheet.getWorksheets().find \{
   it.getTitle().getPlainText().equals(&quot;明細&quot;)
-}
+\}
 </pre>
 <p>ListFeedにレコードを追加。</p>
 <pre>ListFeed list = service.getFeed(work.getListFeedUrl(), ListFeed.class)

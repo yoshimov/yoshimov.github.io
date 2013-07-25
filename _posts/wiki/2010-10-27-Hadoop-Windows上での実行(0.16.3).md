@@ -89,11 +89,11 @@ start bash bin/hadoop tasktracker
 <pre>org.apache.hadoop.security.UnixUserGroupInformation#getUnixUserName()
 </pre>
 <p>を、</p>
-<pre> static String getUnixUserName() throws IOException {
+<pre> static String getUnixUserName() throws IOException \{
    String[] result = executeShellCommand(
-       new String[]{Shell.USER_NAME_COMMAND});
+       new String[]\{Shell.USER_NAME_COMMAND\});
    return toString(result);
- }
+ \}
 </pre>
 <p>のように変更して、jarにパッチを当てておく。＃以前のパッチは、ユーザ名に改行が入ってしまっていたので、修正。</p>
 <h4>設定変更</h4>

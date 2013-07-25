@@ -14,7 +14,7 @@ freemind/visorFreemind.swf
 </pre>
 <h3>使い方</h3>
 <p><a href="http://freemind.sourceforge.net/">FreeMind</a>の.mmファイルを添付して、</p>
-<pre>{{ref_mm ファイル名}}
+<pre>\{\{ref_mm ファイル名\}\}
 </pre>
 <p>という記述をWikiページ内に追加してください。</p>
 <h3>ダウンロード</h3>

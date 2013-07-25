@@ -12,8 +12,8 @@ layout: post
 <h3>手順</h3>
 <p><a href="http://fswiki.poi.jp/">FSWiki</a>はURLの拡張子でイメージかどうかを判定していますので、基本的にURLに.pngを加えればイメージとして貼りつけられます。その際に、Wiki記法で使われている文字はURLエンコードするようにします。</p>
 <p>具体的には、</p>
-<pre>{ -&gt; %7b
-} -&gt; %7d
+<pre>\{ -&gt; %7b
+\} -&gt; %7d
 | -&gt; %7c
 [ -&gt; %5b
 ] -&gt; %5d

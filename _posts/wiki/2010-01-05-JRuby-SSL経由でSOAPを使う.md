@@ -72,7 +72,7 @@ server = SOAPServer.new(
  :SSLVerifyClient =&gt; nil,
  :SSLCertName =&gt; nil
 )
-new_thread = Thread.new { server.start }
+new_thread = Thread.new \{ server.start \}
 </pre>
 <p>という感じでサーバを起動すれば使えます。気をつけないといけないのは、CRubyでは自己署名していないCertificateでもエラーは出ませんが、JRubyでは署名がないとエラーになってしまうという点です。</p>
 <h3>組み合わせ毎の動作</h3>

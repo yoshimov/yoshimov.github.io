@@ -11,11 +11,11 @@ layout: post
 <p>ページ中にあるURLを一括して書き換える場合の方法です。</p>
 <h3>方法</h3>
 <p>例えば一律ベースURLを追加する場合は以下のようにする。</p>
-<pre>jQuery(&quot;a&quot;, document.body).each(function() {
+<pre>jQuery(&quot;a&quot;, document.body).each(function() \{
   var obj = jQuery(this);
   var link = obj.attr('href');
   obj.attr('href', &quot;http://somewhere/&quot; + link);
-});
+\});
 </pre>
 <p>大まかにはこんな流れ。</p>
 <ul>
