@@ -35,6 +35,8 @@ navigation:
   icon: icon-home
 - text: About
   url: /about/yoshimov
+- text: Archive
+  url: /archive/
 - text: Products
   url: /category/#product-ref
   children:
@@ -87,9 +89,9 @@ JB :
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.
   #
-  archive_path: /archive.html
-  categories_path : /categories.html
-  tags_path : /tags.html
+  archive_path: /archive/
+  categories_path : /category/
+  tags_path : /tag/
   atom_path : /atom.xml
   rss_path : /rss.xml
 

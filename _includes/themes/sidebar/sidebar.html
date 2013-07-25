@@ -18,7 +18,7 @@
 {% for post in site.posts %}
     {% capture next %}{{ post.date | date: "%B %Y" }}{% endcapture %}
     {% if next != current %}
-        <li><a href="{{ site.production_url }}/archive/#{{ post.date | date: "%B%Y" }}">{{ next }}</a></li>
+        <li><a href="{{ site.production_url }}{{ site.JB.archive_path }}#{{ post.date | date: "%B%Y" }}">{{ next }}</a></li>
         {% assign current = next %}
     {% endif %}
 {% endfor %}
