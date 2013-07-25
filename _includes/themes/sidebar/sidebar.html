@@ -7,7 +7,7 @@
 <h3 class="widget-title">Recent Posts</h3>
 <ul>
 {% for post in site.posts limit:10 %}
-    <li><a href="{{ site.production_url }}{{post.url}}">{{ post.title }}</a></li>
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{post.url}}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 </div>
@@ -27,37 +27,16 @@
 
 <div class="widget-wrapper">
 <h3 class="widget-title">Categories</h3>
-<ul>
+<ul class="tag_box inline">
   {% assign categories_list = site.categories %}
-  {% if categories_list.first[0] == null %}
-    {% for category in categories_list %} 
-    	<a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category }}-ref">
-    		{{ category | join: "/" }} <span>{{ site.categories[category].size }}</span>
-    	</a>&nbsp;
-    {% endfor %}
-  {% else %}
-    {% for category in categories_list %} 
-    	<a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category[0] }}-ref">
-    		{{ category[0] | join: "/" }} <span>{{ category[1].size }}</span>
-    	</a>&nbsp;
-    {% endfor %}
-  {% endif %}
+  {% include JB/categories_list %}
 </ul>
 </div>
 
 <div class="widget-wrapper">
 <h3 class="widget-title">Tags</h3>
-<ul>
+<ul class="tag_box inline">
   {% assign tags_list = site.tags %}
-  {% if tags_list.first[0] == null %}
-    {% for tag in tags_list %} 
-    	<a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }} <span>{{ site.tags[tag].size }}</span></a>&nbsp;
-    {% endfor %}
-  {% else %}
-    {% for tag in tags_list %} 
-    	<a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}-ref">{{ tag[0] }} <span>{{ tag[1].size }}</span></a>&nbsp;
-    {% endfor %}
-  {% endif %}
-
+  {% include JB/tags_list %}
 </ul>
 </div>
