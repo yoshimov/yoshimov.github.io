@@ -2,6 +2,7 @@
 layout: post
 title: GitHubのMarkdownの注意点
 tags: [tips, markdown, github]
+category: tips
 ---
 {% include keywords.md %}
 
@@ -112,11 +113,11 @@ JavaScriptなども埋め込むのが非常に簡単なのは良いですね。
 
 Markdownでは、番号リストは
 
-    1(ドット) item1
+    1. item1
 
 などと書きますが、これが影響してか
 
-    * 1(ドット)2
+    * 1.2
 
 などというような記述があると、ページのビルドに失敗してしまいます。
 日付などをこんな風に記載している場合は注意しましょう。
