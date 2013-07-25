@@ -29,7 +29,19 @@
 <h3 class="widget-title">Categories</h3>
 <ul>
   {% assign categories_list = site.categories %}
-  {% include JB/categories_list %}
+  {% if categories_list.first[0] == null %}
+    {% for category in categories_list %} 
+    	<a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category }}-ref">
+    		{{ category | join: "/" }} <span>{{ site.categories[category].size }}</span>
+    	</a>&nbsp;
+    {% endfor %}
+  {% else %}
+    {% for category in categories_list %} 
+    	<a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category[0] }}-ref">
+    		{{ category[0] | join: "/" }} <span>{{ category[1].size }}</span>
+    	</a>&nbsp;
+    {% endfor %}
+  {% endif %}
 </ul>
 </div>
 
