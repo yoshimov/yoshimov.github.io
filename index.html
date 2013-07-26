@@ -4,7 +4,7 @@ layout: default
 {% include welcome.md %}
 
 <div class="hfeed">
-{% for post in paginator.posts %}
+{% for post in site.posts limit: 5%}
     <div class="hentry">
         <h2 class="entry-title"><a href="{{ BASE_PATH }}{{ post.url }}" rel="bookmark">{{ post.title }}</a></h2>
         <ul class="inline">
@@ -12,31 +12,10 @@ layout: default
             {% if post.date %}<li><abbr class="published" title="{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}"><i class="icon-calendar"></i> {{ post.date | date: "%b %d, %Y" }}</abbr></li>{% endif %}
             {% if site.JB.comments.provider == "disqus" %}<li><i class="icon-comment"></i> <a href="{{ BASE_PATH }}{{ post.url }}#disqus_thread">Comment</a></li>{% endif %}
         </ul>
-        <p class="entry-summary">{{ post.content | strip_html | truncatewords: 50 }}</p>
+        <p class="entry-summary">{{ post.content | strip_html | truncatewords: 30 }}</p>
         <p><a href="{{ BASE_PATH }}{{ post.url }}" rel="nofollow">Read more</a></p>
     </div>
 {% endfor %}
-</div>
-
-<div class="pagination">
-<ul>
-    {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-        <li><a href="{{ BASE_PATH }}/">Prev</a></li>
-    {% else %}
-        <li><a href="{{ BASE_PATH }}/page{{ paginator.previous_page }}">Prev</a></li>
-    {% endif %}
-    {% else %}
-        <li><span class="disabled">Prev</span></li>
-    {% endif %}
-
-    
-    {% if paginator.next_page %}
-        <li><a href="{{ BASE_PATH }}/page{{ paginator.next_page }}">Next</a></li>
-    {% else %}
-        <li><span class="disabled">Next</span></li>
-    {% endif %}
-</ul>
 </div>
 
     {% if site.JB.comments.provider == "disqus" %}
