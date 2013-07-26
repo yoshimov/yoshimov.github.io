@@ -51,7 +51,7 @@ navigation:
 
 paginate: 10
 
-limit_posts: 1000
+limit_posts: 800
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
