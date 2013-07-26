@@ -1,4 +1,4 @@
-[Yoshimopedia](/about/yoshimopedia)へようこそ。
+<p><a href="/about/yoshimopedia">Yoshimopedia</a>へようこそ。</p>
 
-まだこのサイトは構築中のため、記事のURLなどが変更になる場合があります。
-ご注意ください。
+<p>まだこのサイトは構築中のため、記事のURLなどが変更になる場合があります。
+ご注意ください。</p>
