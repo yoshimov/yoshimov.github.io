@@ -49,9 +49,7 @@ navigation:
   - text: Addrex
     url: /product/addrex
 
-paginate: 10
-
-limit_posts: 800
+limit_posts: 600
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
