@@ -6,7 +6,7 @@
   if (url.match(/.*\/\?page=(.+)/)) {
     var decoded = Encoding.urlDecode(RegExp.$1);
     var utf8title = Encoding.convert(decoded, 'UTF8', 'EUCJP');
-    var newurl = '/' + Encoding.urlEncode(utf8title);
+    var newurl = '/' + Encoding.urlEncode(utf8title).replace(/%2F/g, "-");
     location.href = newurl;
   }
 })();
