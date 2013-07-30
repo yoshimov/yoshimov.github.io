@@ -5,3 +5,4 @@
 [GitHub Pages]: http://pages.github.com/
 [FSWiki]: http://fswiki.sourceforge.jp/cgi-bin/wiki.cgi
 [Google]: http://www.google.com
+[Chocolatey]: http://chocolatey.org
