@@ -1,10 +1,9 @@
-<script src="https://raw.github.com/polygonplanet/Unzipper.js/master/src/encoding.js">
+<script src="{{ ASSET_PATH }}/js/encoding.js">
 </script>
-<script language="JavaScript">
+<script type="text/javascript">
 (function(){
   var url = location.href;
   if (url.match(/.*\/\?page=(.+)/)) {
-    var page = ;
     var decoded = Encoding.urlDecode(RegExp.$1);
     var utf8title = Encoding.convert(decoded, 'UTF8', 'EUCJP');
     var newurl = '/' + Encoding.urlEncode(utf8title);
