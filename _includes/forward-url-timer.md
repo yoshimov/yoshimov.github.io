@@ -3,10 +3,8 @@
 * [{{ forward_title }}]({{ forward_url }})
 
 <script language="JavaScript">
-<!--
 function jumpUrl() [
   location.href = "{{ forward_url }}";
 }
 setTimeout("jumpUrl()", 5000);
-//-->
 </script>
