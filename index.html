@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-{% include welcome.md %}
+{% include welcome.html %}
+
+{% include forward-wiki.html %}
 
 <div class="hfeed">
 {% for post in site.posts limit: 5%}
