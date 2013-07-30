@@ -1,7 +1,8 @@
 ---
 layout: post
-category: tasker
+category: tips
 tags: [tasker, android, tips]
+title: 電波が弱い時に一定時間機内モードにする
 ---
 {% include keywords.md %}
 
@@ -21,12 +22,12 @@ tags: [tasker, android, tips]
 
 ## 手順
 
-<ul>
-<li/>一定時間機内モードに設定するタスクを作る。以下は６分間機内モードに設定するタスクの例です。<ul>
-<li>電波状況の揺れを考えて、５秒間待って電波が改善しなければ機内モードにしています。</li>
-<li>Countdownと機内モードを解除するResumeを別にしましたが、１つでも良いです。</li>
-</ul>
-</ul>
+* 一定時間機内モードに設定するタスクを作る。
+以下は６分間機内モードに設定するタスクの例です。
+    * 電波状況の揺れを考えて、５秒間待って電波が改善しなければ
+機内モードにしています。
+    * Countdownと機内モードを解除するResumeを別にしましたが、１つでも良いです。
+
 <pre>Task: Suspend cell network (31)
  A1: Wait [ MS:0 Seconds:5 Minutes:0 Hours:0 Days:0 ] If [ %CELLSIG = 0 ]
  A2: Return [ Value:0 Stop:On ] If [ %CELLSIG &gt; 0 ]
@@ -45,11 +46,12 @@ Task: Countdown cell network (34)
  A3: Variable Clear [ Name:%suspendMinute Pattern Matching:Off ] 
  A4: Perform Task [ Name:Resume cell network Stop:Off Priority:5 Parameter 1 (%par1): Parameter 2 (%par2): Return Value Variable: ] 
 </pre>
-<ul>
-<li/>携帯の電波が弱くなった時に、Wifi接続なし、電源なし、機内モードではなければ、一定時間機内モードに設定するプロファイルを作ります。<ul>
-<li>Time Stateのrepeatを使って、一定時間ごとに残り時間をカウントダウンするタスクを呼び出します。</li>
-</ul>
-</ul>
+
+* 携帯の電波が弱くなった時に、Wifi接続なし、電源なし、機内モードではなければ、
+一定時間機内モードに設定するプロファイルを作ります。
+    * Time Stateのrepeatを使って、一定時間ごとに残り時間をカウントダウンする
+タスクを呼び出します。
+
 <pre>Profile: Weak Cell Network (32)
  State: Not Airplane Mode
  State: Not Wifi Connected [ SSID:* MAC:* IP:* ]
@@ -63,5 +65,9 @@ Profile: Keep airplane (35)
  State: Airplane Mode
  Enter: Countdown cell network (34)
 </pre>
-<p>これで、一定時間機内モードにして、復帰した時にまだ電波状況が改善していなければ、再度機内モードに入ります。</p>
-<p>もう１つ変数を導入すれば、機内モードに設定する時間を徐々に延ばしていくスロットリングが入れられますね。そのへんはまたおいおい。</p>
+
+これで、一定時間機内モードにして、復帰した時にまだ電波状況が
+改善していなければ、再度機内モードに入ります。
+
+もう１つ変数を導入すれば、機内モードに設定する時間を徐々に延ばしていく
+スロットリングが入れられますね。そのへんはまたおいおい。

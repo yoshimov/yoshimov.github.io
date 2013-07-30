@@ -9,6 +9,7 @@
                         {% if page.author %}<li><span class="vcard"><i class="icon-user"></i> <span class="fn">{{ page.author }}</span></span></li>{% endif %}
                         {% if page.date %}<li><abbr class="published" title="{{ page.date | date: "%a, %d %b %Y %H:%M:%S %z" }}"><i class="icon-calendar"></i> {{ page.date | date: "%b %d, %Y" }}</abbr></li>{% endif %}
                     </ul>
+{% include adsense-text.html %}
                     {{ content }}
                 </div>
             </div>
