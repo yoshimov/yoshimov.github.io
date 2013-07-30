@@ -39,15 +39,20 @@ navigation:
   icon: icon-home
 - text: About
   url: /about/yoshimov
-- text: Archive
+- text: Tips
   url: /archive/
+  children:
+  - text: Tasker Tips
+    url: /archive/#tasker-ref
 - text: Products
   url: /category/#product-ref
   children:
   - text: isobooster
-    url: /product/isobooster
+    url: /Linux-•¡”OS‚ğ‹N“®‚Å‚«‚éƒ‰ƒCƒuUSB‚Ìì¬
   - text: Addrex
-    url: /product/addrex
+    url: /Addrex
+- text: Archive
+  url: /archive/
 
 limit_posts: 600
 
