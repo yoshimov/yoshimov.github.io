@@ -5,4 +5,4 @@ layout: post
 
 * [Tetheringの切り忘れを防止する](/tips/tasker-tethering-timer)
 
-{% include forward-url-timer.md param="/tips/tasker-tethering-timer" %}
+{% include 'forward-url-timer.md' param="/tips/tasker-tethering-timer" %}
