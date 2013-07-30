@@ -1,12 +1,16 @@
 ---
 layout: default
 ---
-{% include welcome.html %}
-
 {% include forward-wiki.html %}
 
+{% include welcome.html %}
+
 <div class="hfeed">
-{% for post in site.posts limit: 5%}
+{% include googleplus-widget.html %}
+</div>
+
+<div class="hfeed">
+{% for post in site.posts limit: 10 %}
     <div class="hentry">
         <h2 class="entry-title"><a href="{{ BASE_PATH }}{{ post.url }}" rel="bookmark">{{ post.title }}</a></h2>
         <ul class="inline">

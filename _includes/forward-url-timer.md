@@ -5,7 +5,7 @@
 <script language="JavaScript">
 <!--
 function jumpUrl() [
-  location.href = "{% forward_url %}";
+  location.href = "{{ forward_url }}";
 }
 setTimeout("jumpUrl()", 5000);
 //-->
