@@ -16,7 +16,7 @@ layout: default
         <ul class="inline">
             {% if post.author %}<li><span class="vcard"><i class="icon-user"></i> <span class="fn">{{ post.author }}</span></span></li>{% endif %}
             {% if post.date %}<li><abbr class="published" title="{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}"><i class="icon-calendar"></i> {{ post.date | date: "%b %d, %Y" }}</abbr></li>{% endif %}
-            {% if site.JB.comments.provider == "disqus" %}<li><i class="icon-comment"></i> <a href="{{ BASE_PATH }}{{ post.url }}#disqus_thread">Comment</a></li>{% endif %}
+            <li><div class="g-plusone" data-href="{{ BASE_PATH }}{{ post.url }}" data-size="small" data-annotation="inline"></div></li>
         </ul>
         <p class="entry-summary">{{ post.content | strip_html | truncatewords: 30 }}</p>
         <p><a href="{{ BASE_PATH }}{{ post.url }}" rel="nofollow">Read more</a></p>
