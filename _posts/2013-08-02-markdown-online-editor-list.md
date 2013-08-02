@@ -4,6 +4,8 @@ category: list
 tags: markdown online editor list
 title: Webブラウザで使えるMarkdownエディタの比較
 ---
+{: toc}
+
 {% include keywords.md %}
 
 ## 概要
@@ -29,13 +31,15 @@ Webブラウザから利用できる[Markdown]エディタを比較してみま�
 |[Minimalist Online Markdown Editor](#minimalist)|Showdown|○|△|×|×|×
 |[InstantMark](#instantmark)|Showdown|○|△|×|×|×
 |[Markdown Editor by Jon](#jon)|Showdown|○|△|×|×|×
-|[Markdown Edit](#markdown-edit)|Marked|○|△|○|○|×
+|[Markdown Edit](#markdown-edit)|Marked|○|○|○|○|×
 |[Backpager](#backpager)|WMD|○|△|○|×|×
+|[wri.pe](#wripe)|独自|○|○(予定)|○|○|○
 
-今のところ、ブラウザキャッシュに自動保存してくれて、
-ローカルでも動作するMarkdown Editが一番使いやすそうな感じです。
+今のところ、[wri.pe](#wripe)がぶっちぎりで使いやすいです。
+wri.peのオフライン対応までは[Markdown Edit](#markdown-edit)で、
+オフライン対応後に乗り換え、という感じですかね。
 
-これをChromeでアプリケーションショートカット化すると、
+これらをChromeでアプリケーションショートカット化すると、
 十分エディタとして使えます。
 
 ### Markdown: Dingus
@@ -147,18 +151,18 @@ Markdownの提唱元が提供しているオンライン変換サービスです
 
 ちょっと機能豊富なエディタ。
 ライブビューもあります。
-HTML5のLocalStorageを使って、自動保存をしてくれます。
+HTML5のアプリケーションキャッシュを使って、自動保存をしてくれます。
 
 Markdownのハイライトもしてくれて、
 タブキーは利用できるように多少の編集補助もあります。
 画面の幅が狭いと、プレビューが下に移動するレスポンシブデザインになっています。
 
 Markdownの横幅が広い、エディタ部分が横にスクロールしてしまうのがちょっと残念なところ。
-あと、イメージまわりにバグがあるらしく(2013/8/2)、編集中に
+あと、イメージまわりにバグがあるらしく、編集中に
 
     ![]http://...
 
-という記述が出てくると、エディタが停止してしまいます。
+という記述に()を追記しようとすると、エディタが停止してしまいます。(2013/8/2)
 
 ### Backpager
 
@@ -168,5 +172,18 @@ Markdownの横幅が広い、エディタ部分が横にスクロールしてし
 
 シンプルなエディタ。ライブビューあり。
 ベースはWMDなので、Online Markdown Editor by Wernerとほぼ同等です。
-編集補助はありますが、タブは使えません。
+キーボードショートカットが使える編集補助はありますが、タブは使えません。
 画面の見た目は綺麗です。
+
+### wri.pe
+
+* <https://wri.pe/>
+
+![wri.pe](https://lh4.googleusercontent.com/9JIq0U5H4r-VeoeytRTaeYhsI-JxaXqxiM26nXmP8Kk2=w325-h217-p-no)
+
+ライブビューのあるシンプルなエディタで、編集補助あり。
+しかもテーブルが表現可能。
+将来的にはオフラインで動作します。
+
+今のところオフライン時には保存ができないので、メモ１個しか新規作成できませんが、
+Markdownの編集に加えて、保存、検索までできてしまう完璧すぎるサービスです。
