@@ -20,17 +20,17 @@ Webブラウザから利用できる[Markdown]エディタを比較してみま�
 
 |サービス名|エンジン|ライブプレビュー|オフライン|編集補助|自動保存|サーバ保存
 |:---|---|---|---|---|---|---
-|Markdown: Dingus|Markdown|×|×|×|×|×
-|Online Markdown Editor by CtrlShift|[Showdown]|○|△|×|×|×
-|Markdown Viewer|Markdown.js|○|△|×|×|×
-|Markable.in|独自|○|×|○|○|○
-|Online Markdown Editor by Werner|WMD|○|△|○|×|×
-|Markdown Live Preview|Markdown.js|×|△|×|×|×
-|Minimalist Online Markdown Editor|Showdown|○|△|×|×|×
-|InstantMark|Showdown|○|△|×|×|×
-|Markdown Editor by Jon|Showdown|○|△|×|×|×
-|Markdown Edit|Marked|○|△|○|○|×
-|Backpager|WMD|○|△|○|×|×
+|[Markdown: Dingus](#dingus)|Markdown|×|×|×|×|×
+|[Online Markdown Editor by CtrlShift](#ctrlshift)|[Showdown]|○|△|×|×|×
+|[Markdown Viewer](#markdown-viewer)|Markdown.js|○|△|×|×|×
+|[Markable.in](#markablein)|独自|○|×|○|○|○
+|[Online Markdown Editor by Werner](#werner)|WMD|○|△|○|×|×
+|[Markdown Live Preview](#preview)|Markdown.js|×|△|×|×|×
+|[Minimalist Online Markdown Editor](#minimalist)|Showdown|○|△|×|×|×
+|[InstantMark](#instantmark)|Showdown|○|△|×|×|×
+|[Markdown Editor by Jon](#jon)|Showdown|○|△|×|×|×
+|[Markdown Edit](#markdown-edit)|Marked|○|△|○|○|×
+|[Backpager](#backpager)|WMD|○|△|○|×|×
 
 今のところ、ブラウザキャッシュに自動保存してくれて、
 ローカルでも動作するMarkdown Editが一番使いやすそうな感じです。
@@ -51,6 +51,7 @@ Markdownの提唱元が提供しているオンライン変換サービスです
 エディタの補助もありません。
 
 ### Online Markdown Editor by CtrlShift
+{: #ctrlshift}
 
 * <http://www.ctrlshift.net/project/markdowneditor/>
 
@@ -85,6 +86,7 @@ Markdownの提唱元が提供しているオンライン変換サービスです
 オンラインではないと動作しないのが難点。
 
 ### Online Markdown Editor by Werner
+{: #werner}
 
 * <http://slhck.info/markdown/>
 
@@ -95,6 +97,7 @@ Markdownの提唱元が提供しているオンライン変換サービスです
 基本的にキャッシュにあれば、オフラインでも動きます。
 
 ### Markdown Live Preview
+{: #preview}
 
 * <http://markdownlivepreview.com/>
 
@@ -105,6 +108,7 @@ Markdownの提唱元が提供しているオンライン変換サービスです
 エディタの横幅が固定なのがちょっと気になるところ。
 
 ### Minimalist Online Markdown Editor
+{: #minimalist}
 
 * <http://markdown.pioul.fr/>
 
@@ -125,6 +129,7 @@ Markdownの提唱元が提供しているオンライン変換サービスです
 ファイルへの保存機能が付いています。
 
 ### Markdown Editor by Jon
+{: #jon}
 
 * <http://joncom.be/experiments/markdown-editor/edit/>
 
