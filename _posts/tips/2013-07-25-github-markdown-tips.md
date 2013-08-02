@@ -4,9 +4,9 @@ title: GitHubのMarkdownの注意点
 tags: [tips, markdown, github]
 category: tips
 ---
-{% include keywords.md %}
+{: toc}
 
-{:toc}
+{% include keywords.md %}
 
 ## 概要
 
