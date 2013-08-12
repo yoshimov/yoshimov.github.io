@@ -18,21 +18,23 @@ Webブラウザから利用できる[Markdown]エディタを比較してみま�
 
 ## 比較
 
-とりあえず全体のまとめ。
+とりあえず全体のまとめ。順不同です。
 
 |サービス名|エンジン|ライブプレビュー|オフライン|編集補助|自動保存|サーバ保存
 |:---|---|---|---|---|---|---
-|[Markdown: Dingus](#dingus)|Markdown|×|×|×|×|×
-|[Online Markdown Editor by CtrlShift](#ctrlshift)|[Showdown]|○|△|×|×|×
-|[Markdown Viewer](#markdown-viewer)|Markdown.js|○|△|×|×|×
-|[Markable.in](#markablein)|独自|○|×|○|○|○
-|[Online Markdown Editor by Werner](#werner)|WMD|○|△|○|×|×
-|[Markdown Live Preview](#preview)|Markdown.js|×|△|×|×|×
-|[Minimalist Online Markdown Editor](#minimalist)|Showdown|○|△|×|×|×
+|[Backpager](#backpager)|WMD|○|△|○|×|×
 |[InstantMark](#instantmark)|Showdown|○|△|×|×|×
+|[Markable.in](#markablein)|独自|○|×|○|○|○
+|[Markdown: Dingus](#dingus)|Markdown|×|×|×|×|×
 |[Markdown Editor by Jon](#jon)|Showdown|○|△|×|×|×
 |[Markdown Edit](#markdown-edit)|Marked|○|○|○|○|×
-|[Backpager](#backpager)|WMD|○|△|○|×|×
+|[Markdown Live Preview](#preview)|Markdown.js|×|△|×|×|×
+|[Markdown Live Editor by Jaime](#jaime)|WMD|○|○|○|○|×
+|[Markdown Viewer](#markdown-viewer)|Markdown.js|○|△|×|×|×
+|[Minimalist Online Markdown Editor](#minimalist)|Showdown|○|△|×|×|×
+|[Online Markdown Editor by CtrlShift](#ctrlshift)|[Showdown]|○|△|×|×|×
+|[Online Markdown Editor by Werner](#werner)|WMD|○|△|○|×|×
+|[Share Memo](#share-memo)|Marked|○|△|△|×|○
 |[wri.pe](#wripe)|独自|○|○(予定)|○|○|○
 
 今のところ、[wri.pe](#wripe)がぶっちぎりで使いやすいです。
@@ -171,7 +173,7 @@ Markdownの横幅が広い、エディタ部分が横にスクロールしてし
 ![Backpager](https://lh6.googleusercontent.com/ejzUr05VhUVHnv4379z62eQBXbXOJjfZE9Ub4Ya3G2RB=w301-h207-p-no)
 
 シンプルなエディタ。ライブビューあり。
-ベースはWMDなので、Online Markdown Editor by Wernerとほぼ同等です。
+ベースはWMDなので、[Online Markdown Editor by Werner](#werner)とほぼ同等です。
 キーボードショートカットが使える編集補助はありますが、タブは使えません。
 画面の見た目は綺麗です。
 
@@ -186,4 +188,30 @@ Markdownの横幅が広い、エディタ部分が横にスクロールしてし
 将来的にはオフラインで動作します。
 
 今のところオフライン時には保存ができないので、メモ１個しか新規作成できませんが、
-Markdownの編集に加えて、保存、検索までできてしまう完璧すぎるサービスです。
+Markdownの編集に加えて、自動保存、検索までできてしまう完璧すぎるサービスです。
+
+### Share Memo
+
+* <http://www.sharememo.net/>
+
+![Share Memo](https://lh5.googleusercontent.com/f2m6YhXCjN9v6s-IU5Fs2yxnuXpnHXG8xWVkOVm_ACZZ=w362-h207-p-no)
+
+これは、どちらかというと作成したメモを共有するためのサービス。
+ノート１つずつにURLが割り当てられて、共有できます。
+
+[Gist]と違って編集履歴などは残りませんが、FacebookアカウントやTwitterアカウントだけで
+手軽にメモを共有できるのが良い感じです。
+
+正式にはオフラインには対応していませんが、新規作成ページがキャッシュされていれば
+プレビューも含めて基本的なメモの作成はできます。
+
+### Markdown Live Editor by Jaime
+{: #jaime}
+
+* <http://jrmoran.com/playground/markdown-live-editor/>
+
+![](https://lh6.googleusercontent.com/YkCfJdHS5X_mjfwkpciz7jivHHm3qL7RIktj-pFSBavt=w326-h217-p-no)
+
+WMDを使ったシンプルなエディタ。
+HTML5のローカルストレージを使って、編集中のコンテンツをブラウザ内に保存しておいてくれます。
+オフライン状態でも動作します。
