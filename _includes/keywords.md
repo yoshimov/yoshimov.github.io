@@ -1,5 +1,6 @@
 [GitHub]: https://github.com
 [GitHub Pages]: http://pages.github.com/
+[Gist]: https://gist.github.com/
 [Google]: http://www.google.com
 [Feedly]: http://feedly.com/
 [Yoshimov]: /about/yoshimov
@@ -8,6 +9,8 @@
 [Google+]: https://plus.google.com/
 [Evernote]: http://evernote.com/
 [Markdown]: http://daringfireball.net/projects/markdown/
+[wri.pe]: https://wri.pe/
+[Zenback]: https://zenback.jp/
 
 [AutoRemote]: http://joaoapps.com/autoremote/
 [Tasker]: http://tasker.dinglisch.net/
