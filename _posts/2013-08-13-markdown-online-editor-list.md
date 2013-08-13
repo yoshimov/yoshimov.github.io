@@ -23,6 +23,10 @@ Webブラウザから利用できる[Markdown]エディタを比較してみま�
 |サービス名|エンジン|ライブプレビュー|オフライン|編集補助|自動保存|サーバ保存
 |:---|---|---|---|---|---|---
 |[Backpager](#backpager)|WMD|○|△|○|×|×
+|[Dillinger](#dillinger)|Showdown|○|×|○|○|○
+|[Editor](#editor)|CodeMirror|△|△|○|×|×
+|[GitHub Flavored Markdown Live Preview](#github-live)|Showdown|○|△|×|×|×
+|[Hallo.js](#hallojs)|Showdown|○|△|○|×|×
 |[InstantMark](#instantmark)|Showdown|○|△|×|×|×
 |[Markable.in](#markablein)|独自|○|×|○|○|○
 |[Markdown: Dingus](#dingus)|Markdown|×|×|×|×|×
@@ -35,6 +39,7 @@ Webブラウザから利用できる[Markdown]エディタを比較してみま�
 |[Online Markdown Editor by CtrlShift](#ctrlshift)|[Showdown]|○|△|×|×|×
 |[Online Markdown Editor by Werner](#werner)|WMD|○|△|○|×|×
 |[Share Memo](#share-memo)|Marked|○|△|△|×|○
+|[Socrates](#socrates)|CodeMirror|○|×|×|○|○?
 |[wri.pe](#wripe)|独自|○|○(予定)|○|○|○
 
 今のところ、[wri.pe](#wripe)がぶっちぎりで使いやすいです。
@@ -185,10 +190,20 @@ Markdownの横幅が広い、エディタ部分が横にスクロールしてし
 
 ライブビューのあるシンプルなエディタで、編集補助あり。
 しかもテーブルが表現可能。
+キーボードショートカットでノートの新規作成などを行うことができます。
 将来的にはオフラインで動作します。
 
-今のところオフライン時には保存ができないので、メモ１個しか新規作成できませんが、
-Markdownの編集に加えて、自動保存、検索までできてしまう完璧すぎるサービスです。
+基本的にMarkdownで書いたノートはサーバ側に自動的に保存されて、
+カレンダーのビューなどから参照することができます。
+また、ノートをアーカイブする機能もあります。
+
+DropboxやEvernoteと連携して、ノートをそちらに保存する
+こともできます。
+
+今のところオフライン時には保存ができないので、
+メモ１個しか新規作成できませんが、
+Markdownの編集に加えて、自動保存、検索までできてしまう
+完璧すぎるサービスです。
 
 ### Share Memo
 
@@ -210,8 +225,79 @@ Markdownの編集に加えて、自動保存、検索までできてしまう完
 
 * <http://jrmoran.com/playground/markdown-live-editor/>
 
-![](https://lh6.googleusercontent.com/YkCfJdHS5X_mjfwkpciz7jivHHm3qL7RIktj-pFSBavt=w326-h217-p-no)
+![Markdown Live Editor](https://lh6.googleusercontent.com/YkCfJdHS5X_mjfwkpciz7jivHHm3qL7RIktj-pFSBavt=w326-h217-p-no)
 
 WMDを使ったシンプルなエディタ。
 HTML5のローカルストレージを使って、編集中のコンテンツをブラウザ内に保存しておいてくれます。
 オフライン状態でも動作します。
+
+### Dillinger
+
+* <http://dillinger.io/>
+
+![Dillinger](https://lh6.googleusercontent.com/T5JaOPfNQcwp-rPUyYr27rVg7NeXXiLLgquVNsf8649F=w337-h214-p-no)
+
+Showdownを使った、機能豊富なエディタ。
+エディタ部分にACEが使われていて、編集補助があります。
+プレビュー自体はJavaScriptでできていますが、
+オフラインキャッシュでは動かないようです。
+テーブルも表示できません。
+
+改行の扱いが、オリジナルのMarkdownと違って、
+HTML上でも改行として扱われます。
+
+行番号が表示されたり、プレビューが連動スクロールしたりと細かい使い勝手が良い感じです。
+バックエンドはnode.jsでできてますが、ソースも公開されています。
+プラグインで、ファイルを[Dropbox]や[Google Drive]に
+保存できるようになっています。
+
+### Editor
+
+* <http://lab.lepture.com/editor/>
+
+![Editor](https://lh5.googleusercontent.com/I-QbyF-84fhJUUg1GjdXT5PANiqBwNcMY9VuDjkroR0k=w319-h219-p-no)
+
+これは毛色の少し違ったエディタで、HTMLに変換しての
+プレビューはしませんが、Markdownの記号の自動挿入や、
+自動リンク、ボールド表示などをしてくれます。
+ソースも公開されています。
+
+オフラインでもキャッシュされていれば動きます。
+
+機能自体は凄くシンプルで、コンテンツを何処かに保存したりする
+機能はありません。
+
+### GitHub Flavored Markdown Live Preview
+{: #github-live}
+
+* <http://tmpvar.com/markdown.html>
+
+![GitHub Flavored Markdown Live Preview](https://lh3.googleusercontent.com/FGPHHQQIacLoajat2FOJMLwHHAe12PQrNEcvmKMS3THv=w328-h216-p-no)
+
+これは凄くシンプルにプレビューをするためだけに
+特化したエディタです。
+編集補助もありません。
+
+GitHub Flavoredとありますが、エンジンはShowdownなので
+テーブルの表示などもできません。
+
+### Hallo.js
+
+* <http://hallojs.org/demo/markdown/>
+
+![Hallo.js](https://lh5.googleusercontent.com/wDeBbTZB7icq4Ep8uxlBYAx43-RJqFUDmR-xaYFScLeB=w319-h219-p-no)
+
+これもShowdownを使ったプレビュー付きのエディタですが、
+プレビューを編集してMarkdownに反映することもできる
+面白いエディタです。
+
+キャッシュされていればオフラインでも動きます。
+
+### Socrates
+
+* <http://socrates.io/>
+
+Chromeでうまく動かなかったので、画面イメージはありません。
+
+これも、入力したMarkdownをプレビューできるエディタ。
+Firebaseを使ってサーバ側にMarkdownを保存しておいてくれて、URLですぐに開けます。
