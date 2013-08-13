@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: centos ubuntu linux network install
-title: ネットワークインストール時のURL
+title: Linuxのネットワークインストール時のURL
 ---
 ## 概要
 
@@ -10,6 +10,7 @@ KVMで[Ubuntu]などをゲストOSとしてインストールしたい場合、
 いつも指定するURLがわからなくなるのでメモしておきます。
 
 ## Ubuntu
+
 ### Ubuntu 13.04 (raring)
 - 64bit: <http://archive.ubuntu.com/ubuntu/dists/raring/main/installer-amd64/>
 - 32bit: <http://archive.ubuntu.com/ubuntu/dists/raring/main/installer-i386/>
@@ -39,6 +40,7 @@ KVMで[Ubuntu]などをゲストOSとしてインストールしたい場合、
 </ul>
 
 ## CentOS
+
 ### CentOS 6
 
 - 64bit: <http://ftp.iij.ad.jp/pub/linux/centos/6/os/x86_64/>
@@ -49,6 +51,7 @@ KVMで[Ubuntu]などをゲストOSとしてインストールしたい場合、
 - 32bit: <http://ftp.iij.ad.jp/pub/linux/centos/5/os/i386/>
 
 ## Fedora
+
 ### Fedora 19
 - 64bit: <http://ftp.iij.ad.jp/pub/linux/fedora/releases/19/Fedora/x86_64/os/>
 - 32bit: <http://ftp.iij.ad.jp/pub/linux/fedora/releases/19/Fedora/i386/os/>
@@ -86,6 +89,7 @@ KVMで[Ubuntu]などをゲストOSとしてインストールしたい場合、
 </ul>
 
 ## OpenSUSE
+
 ### 11.2
 <ul>
 <li><a href="http://download.opensuse.org/distribution/11.2/repo/oss/">http://download.opensuse.org/distribution/11.2/repo/oss/</a></li>
