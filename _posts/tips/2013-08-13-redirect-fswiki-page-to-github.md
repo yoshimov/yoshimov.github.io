@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 category: tips
 tags: github fswiki tips javascript
 title: FSWikiのページをGitHub Pagesに転送する
