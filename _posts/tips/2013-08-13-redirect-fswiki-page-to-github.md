@@ -5,6 +5,8 @@ tags: github fswiki tips javascript
 title: FSWikiのページをGitHub Pagesに転送する
 ---
 
+{% include keywords.md %}
+
 ## 概要
 
 [FSWiki]のクエリとして渡されるページ名で、GitHub Pagesのページに
