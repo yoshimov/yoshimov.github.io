@@ -40,12 +40,12 @@ navigation:
 - text: About
   url: /about/yoshimov
 - text: Tips
-  url: /archive/
+  url: /tag/#tips-ref
   children:
   - text: Tasker Tips
-    url: /archive/#tasker-ref
+    url: /tag/#tasker-ref
 - text: Products
-  url: /category/#product-ref
+  url: /tag/#product-ref
   children:
   - text: isobooster
     url: /Linux-複数OSを起動できるライブUSBの作成
@@ -54,7 +54,7 @@ navigation:
 - text: Archive
   url: /archive/
 
-limit_posts: 600
+#limit_posts: 600
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
