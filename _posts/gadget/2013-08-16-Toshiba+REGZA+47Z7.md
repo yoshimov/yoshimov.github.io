@@ -26,6 +26,8 @@ title: Toshiba REGZA 47Z7
 |MPEG1/2 352x480|AC3 48kHz|avi|メディアプレイヤー〇、録画リスト×
 |MPEG1/2 720x480|AC3|ts|メディアプレイヤー〇、録画リスト×
 |H.264 1920x1080|AC3 48kHz|mts|〇
+|MPEG-4 640x274|MPEG Audio|avi|×
+|AVC 320x172|AAC 44kHz|mp4|×
 
 ## 気に入っているところ
 
