@@ -21,6 +21,9 @@
 [nanoc]: http://nanoc.ws/
 [Showdown]: https://github.com/coreyti/showdown
 [PageDown]: https://code.google.com/p/pagedown/
+[Getter1]: http://solidbluesky.com/getter1.html
+[VLC]: http://www.videolan.org/vlc/index.ja.html
+[DVDStyler]: http://www.dvdstyler.org/ja/
 
 [CASIO IS11CA]: /CASIO+IS11CA
 [Google Nexus 7]: /gadget/google-nexus7
