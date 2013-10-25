@@ -4,7 +4,6 @@ category: tips
 tags: tips gollum wiki japanese
 title: Gollumで日本語ページを使う
 ---
-{% include keywords.md %}
 
 ## 概要
 
@@ -42,11 +41,13 @@ gitをバックエンドに動作するWikiの[Gollum]で、
 このままだとまだ日本語ファイル名でエラーになるので、
 Gritにパッチを当てます。
 
-* <https://gist.github.com/yoshimov/7113140>
-
     > cd /var/lib/gems/1.9.1/gems/gitlab-grit-2.6.0/lib/grit/
     > sudo wget https://gist.github.com/yoshimov/7113140/raw/95707d8192ede877d8d00265701cbf33c8da8ead/grit-multibyte.diff
     > sudo patch < grit-multibyte.diff
+
+パッチはこちらにあります。
+
+* <https://gist.github.com/yoshimov/7113140>
 
 gitのリポジトリを用意します。
 core.quotepathをfalseにしておかないと、日本語のファイル名が正しく読めないので
