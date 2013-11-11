@@ -6,8 +6,8 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 # highlighting code
 pygments: false
-markdown: redcarpet
-#markdown: kramdown
+#markdown: redcarpet
+markdown: kramdown
 # related post index
 lsi: false
 encoding: utf-8
