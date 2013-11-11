@@ -35,7 +35,7 @@ cyg-getをインストールします。
 
 必要なパッケージをインストールします。
 
-    > cyg-get default ruby rubygems iconv iconv2 make git
+    > cyg-get default ruby rubygems iconv iconv2 make git gcc-core libcrypt-devel
 
 posix-spawnを手動でインストールします。
 
