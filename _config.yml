@@ -54,7 +54,7 @@ navigation:
 - text: Archive
   url: /archive/
 
-#limit_posts: 600
+limit_posts: 600
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
