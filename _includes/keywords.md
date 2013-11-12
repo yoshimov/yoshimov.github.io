@@ -24,6 +24,13 @@
 [Getter1]: http://solidbluesky.com/getter1.html
 [VLC]: http://www.videolan.org/vlc/index.ja.html
 [DVDStyler]: http://www.dvdstyler.org/ja/
+[Gollum]: https://github.com/gollum/gollum
+[Gitblit]: http://gitblit.com/
+[Eclipse]: http://eclipse.org/
+[Groovy]: http://groovy.codehaus.org/
+[Cygwin]: http://cygwin.com/
+[Scala]: http://www.scala-lang.org/
+[Ubuntu]: http://www.ubuntu.com/
 
 [CASIO IS11CA]: /CASIO+IS11CA
 [Google Nexus 7]: /gadget/google-nexus7
