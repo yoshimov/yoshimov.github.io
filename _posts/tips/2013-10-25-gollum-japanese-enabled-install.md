@@ -4,6 +4,7 @@ category: tips
 tags: tips gollum wiki japanese
 title: Gollumで日本語ページを使う
 ---
+{% include keywords.md %}
 
 ## 概要
 

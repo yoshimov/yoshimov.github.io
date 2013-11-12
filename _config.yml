@@ -3,7 +3,7 @@
 permalink: /:categories/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-auto: true
+#auto: false
 # highlighting code
 pygments: false
 #markdown: redcarpet
@@ -55,7 +55,7 @@ navigation:
 - text: Archive
   url: /archive/
 
-limit_posts: 600
+#limit_posts: 600
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

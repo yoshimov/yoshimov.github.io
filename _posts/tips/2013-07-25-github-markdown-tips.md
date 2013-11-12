@@ -1,11 +1,9 @@
 ---
 layout: post
-title: GitHubのMarkdownの注意点
 tags: [tips, markdown, github]
 category: tips
+title: GitHubのMarkdownの注意点
 ---
-{: toc}
-
 {% include keywords.md %}
 
 ## 概要
@@ -191,7 +189,7 @@ Markdownでは、番号リストは
 Jekyllのテンプレート言語Liquidは、中カッコを使って
 
 ```
-    {% include ... %}
+    \{\% include ... \%\}
 ```
 
 などと書くので、HTML中にも中カッコが出てくる場合は `\` でエスケープしてやる必要があります。

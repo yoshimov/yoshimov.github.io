@@ -15,7 +15,7 @@ Proxyのある環境では、[Chocolatey]のインストールコマンドで
 
 ## 環境
 
-* Chocolatey 0.9.8.20
+* [Chocolatey] 0.9.8.20
 * Windows 7
 
 ## 手順

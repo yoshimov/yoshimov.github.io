@@ -2,7 +2,7 @@
 layout: post
 title: Cygwin環境にJekyllをインストールする
 category: tips
-tags: [tips, cygwin, jekyll]
+tags: tips cygwin jekyll
 ---
 {% include keywords.md %}
 
@@ -22,7 +22,7 @@ Webにもこの手の記事はたくさんありますが、そのまま使え�
 
 ## 手順
 
-まずは[Chocolatey][]をインストールします。
+まずは[Chocolatey]をインストールします。
 PowerShellのコマンドを、サイトからコピーしてきて実行してください。
 
 cyg-getをインストールします。
