@@ -30,7 +30,7 @@ Ubuntu環境に[tty.js]を入れる方法です。
 カレントにnode_modulesというフォルダができるので、
 以下の様な内容のconf.jsonを作成して、
 
-```
+<pre>
 {
   "shell": "bash",
   "users": {
@@ -38,7 +38,7 @@ Ubuntu環境に[tty.js]を入れる方法です。
   },
   "port": 8080
 }
-```
+</pre>
 
 以下のようにしてtty.jsを起動します。
 
