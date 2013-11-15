@@ -33,7 +33,7 @@ Ubuntu環境に、Webブラウザから使える端末エミュレータの[tty.
 カレントにnode_modulesというフォルダができるので、
 以下の様な内容のconf.jsonを作成して、
 
-```json
+<pre>
 {
   "shell": "bash",
   "users": {
@@ -41,7 +41,7 @@ Ubuntu環境に、Webブラウザから使える端末エミュレータの[tty.
   },
   "port": 8080
 }
-```
+</pre>
 
 以下のようにしてtty.jsを起動します。
 
