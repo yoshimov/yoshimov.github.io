@@ -31,6 +31,8 @@
 [Cygwin]: http://cygwin.com/
 [Scala]: http://www.scala-lang.org/
 [Ubuntu]: http://www.ubuntu.com/
+[Node.js]: http://nodejs.org/
+[tty.js]: https://github.com/chjj/tty.js/
 
 [CASIO IS11CA]: /CASIO+IS11CA
 [Google Nexus 7]: /gadget/google-nexus7
