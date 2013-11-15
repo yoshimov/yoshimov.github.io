@@ -8,8 +8,11 @@ title: Ubuntu環境でtty.jsを使う
 
 ## 概要
 
-Ubuntu環境に[tty.js]を入れる方法です。
-非常に簡単ですが全体の手順がまとまったものがなかったので。
+Ubuntu環境に、Webブラウザから使える端末エミュレータの[tty.js]を入れる方法です。
+
+![端末の表示イメージ](http://i.imgur.com/wqare.png)
+
+手順は非常に簡単ですが、全体の手順がまとまったものがなかったので。
 
 ## 環境
 
@@ -30,7 +33,7 @@ Ubuntu環境に[tty.js]を入れる方法です。
 カレントにnode_modulesというフォルダができるので、
 以下の様な内容のconf.jsonを作成して、
 
-<pre>
+```json
 {
   "shell": "bash",
   "users": {
@@ -38,7 +41,7 @@ Ubuntu環境に[tty.js]を入れる方法です。
   },
   "port": 8080
 }
-</pre>
+```
 
 以下のようにしてtty.jsを起動します。
 
