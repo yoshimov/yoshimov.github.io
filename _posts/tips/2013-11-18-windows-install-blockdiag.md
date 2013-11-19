@@ -8,8 +8,8 @@ title: Windows環境でblockdiagを使う
 
 ## 概要
 
-Windows環境でblockdiagを使う方法です。
-例によってChocolateyを使います。
+Windows環境で[blockdiag]を使う方法です。
+例によって[Chocolatey]を使います。
 
 ## 手順
 
@@ -30,7 +30,7 @@ Pythonは単独で入れるのがお勧めです。
 
     > easy_install blockdiag seqdiag actdiag nwdiag
 
-とすれば、blockdiag系のコマンドが使えるようになります。
+とすれば、[blockdiag]系のコマンドが使えるようになります。
 
 ついでに、ダイアグラムファイルのコンパイルはmakeがあると楽なので、
 
