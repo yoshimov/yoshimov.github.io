@@ -33,6 +33,9 @@
 [Ubuntu]: http://www.ubuntu.com/
 [Node.js]: http://nodejs.org/
 [tty.js]: https://github.com/chjj/tty.js/
+[xyzzy]: http://xyzzy-022.github.io/
+[blockdiag]: http://blockdiag.com/ja/
+[Emacs]: http://www.gnu.org/software/emacs/
 
 [CASIO IS11CA]: /CASIO+IS11CA
 [Google Nexus 7]: /gadget/google-nexus7
