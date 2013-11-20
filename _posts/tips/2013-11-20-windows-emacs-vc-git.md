@@ -38,14 +38,14 @@ Emacsは、[Chocolatey]を使うと
 環境変数 `HOME` を設定した後、`~/.emacs.d/init.el`に、
 以下の設定を追加します。
 
-```
+<pre>
 (prefer-coding-system 'utf-8-dos)
 (set-default-coding-systems 'utf-8-dos)
 (set-keyboard-coding-system 'utf-8-dos)
 (setq file-name-coding-system 'cp932)
 (setq default-process-coding-system '(utf-8 . cp932))
 (setq git-commits-coding-system 'utf-8)
-```
+</pre>
 
 要はgitコマンドを実行する際に、引数に渡すファイル名やらを
 cp932(WindowsのシフトJIS)に文字コード変換してやります。
