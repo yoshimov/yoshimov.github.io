@@ -8,13 +8,13 @@ title: Emacsでお手軽Markdownメモ帳
 
 ## 概要
 
-Emacsを使って、キー操作ですぐにMarkdownでメモができるファイルを作成、
-保存したファイルをキー操作ですぐにEvernoteに送信する方法です。
+[Emacs]を使って、キー操作ですぐにMarkdownでメモができるファイルを作成、
+保存したファイルをキー操作ですぐに[Evernote]に送信する方法です。
 
 ## 環境
 
 * Windows 7
-* Emacs 24.3
+* [Emacs] 24.3
 
 ## 手順
 
