@@ -1,5 +1,8 @@
 ---
 layout: post
+tags: gadget navi
+buy: 2011年3月
+price: 43800円
 ---
 <h2>CAR NAVITIME</h2>
 <p><span class="error">categoryプラグインは存在しません。</span><span class="error">categoryプラグインは存在しません。</span></p>
