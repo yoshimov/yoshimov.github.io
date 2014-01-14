@@ -4,7 +4,7 @@ category: gadget
 tags: gadget google
 title: Google Chromecast
 price: 5000円ぐらい
-purchase: 
+purchase: 2014/1
 ---
 {% include keywords.md %}
 
@@ -15,7 +15,7 @@ Googleが販売している、テレビへのストリーミングデバイス�
 * 購入時期：2014/1
 * 価格: 5000円ぐらい
 
-## 気入ったところ
+## 気に入ったところ
 
 ### YouTube, Google Playの使い勝手
 
