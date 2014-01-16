@@ -36,6 +36,9 @@
 [xyzzy]: http://xyzzy-022.github.io/
 [blockdiag]: http://blockdiag.com/ja/
 [Emacs]: http://www.gnu.org/software/emacs/
+[VirtualBox]: https://www.virtualbox.org/
+[Vagrant]: http://www.vagrantup.com/
+[Docker]: https://www.docker.io/
 
 [CASIO IS11CA]: /CASIO+IS11CA
 [Google Nexus 7]: /gadget/google-nexus7
