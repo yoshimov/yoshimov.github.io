@@ -1,10 +1,10 @@
 ---
-Layout: post
-Category: gadget
-Tags: gadget cellphone kyocera
-Price: ４万ぐらい
-Purchase: 2014/7/28
-Title: Kyocera TORQUE G01
+layout: post
+category: gadget
+tags: gadget cellphone kyocera
+price: ４万ぐらい
+purchase: 2014/7/28
+title: Kyocera TORQUE G01
 ---
 
 {% include keywords.md %}
