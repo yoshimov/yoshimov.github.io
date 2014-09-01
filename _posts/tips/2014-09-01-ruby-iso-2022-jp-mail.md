@@ -27,7 +27,7 @@ gemを２つインストールしておきます。
 Mail.deliverだとcharsetがうまく指定できないようなので、
 Mailのオブジェクトを使ってメールを送信します。
 
-'''ruby
+```ruby
 require 'mail'
 require 'mail-iso-2022-jp'
 
@@ -40,4 +40,4 @@ mail.body = <<EOS
 EOS
 
 mail.deliver!
-'''
+```
