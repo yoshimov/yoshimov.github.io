@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: gadget
 category: gadget
 tags: gadget cellphone kyocera
 price: ４万ぐらい
@@ -9,11 +9,10 @@ title: Kyocera TORQUE G01
 
 {% include keywords.md %}
 
-KYOCERAが出した防水、耐衝撃のスマートフォンです。
-IS11CAから乗り換えました。
+![torque](http://www.kyocera.co.jp/prdct/telecom/consumer/g01/catalog/img/pic_01.jpg)
 
-* 購入時期: 2014/7/28
-* 価格: ４万ぐらい
+KYOCERAが出した防水、耐衝撃のスマートフォンです。
+[IS11CA]から乗り換えました。
 
 ## 気に入ったところ
 
