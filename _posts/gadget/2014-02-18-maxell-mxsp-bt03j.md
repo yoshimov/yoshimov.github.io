@@ -1,20 +1,16 @@
 ---
-layout: post
+layout: gadget
 category: gadget
 tags: gadget maxell bluetooth speaker
 price: 5000円ぐらい
 purchase: 2014/2
+asin: B00DH5WH3I
 title: maxell MXSP-BT03J
 ---
 {% include keywords.md %}
 
-![MXSP-BT03J](http://www.maxell.co.jp/dbps_data/_material_/localhost/htdoc/consumer/sound/images/c_sound00525.png)
-
 Bluetooth接続のポータブルスピーカーです。
 テレビの音声を手元で聞くために購入しました。
-
-* 購入金額：5000円ぐらい
-* 購入時期：2014/2
 
 ## 気に入ったところ
 
