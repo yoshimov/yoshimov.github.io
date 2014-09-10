@@ -1,20 +1,21 @@
 ---
-layout: post
+layout: gadget
 price: 15万ぐらい
-buy: 2013/1
+purchase: 2013/1
 tags: tv gadget
 group: gadget
+asin: B009RJOPYW
 title: Toshiba REGZA 47Z7
 ---
-<iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=yoshimopeia-22&o=9&p=8&l=as1&m=amazon&f=ifr&ref=qf_sp_asin_til&asins=B009RJOPYW" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-
-- 購入時期:2013年1月
-- 金額:15万ぐらい
 
 タイムシフトマシンの付いた液晶テレビです。前のIOデータのチューナーの使い勝手が悪いので、こちらに買い換えました。
 タイムシフト用に6TB、通常録画用に1TBのHDDを接続して使っています。
 
 <iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=yoshimopeia-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=B009O9166A" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+
+## 状況
+
+- 2014/9/9 タイムシフト用のHDDが片方故障。再起動を繰り返す。
 
 ## 視聴可能メディア
 
