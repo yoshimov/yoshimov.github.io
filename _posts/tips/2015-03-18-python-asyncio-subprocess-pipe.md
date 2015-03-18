@@ -20,7 +20,7 @@ asyncioはスレッドより並列処理が書きやすいですが、
 
 ## コード
 
-```
+~~~ python
 import asyncio
 
 @asyncio.coroutine
@@ -38,7 +38,7 @@ try:
   loop.run_forever()
 finally:
   loop.close()
-```
+~~~
 
 まず、サブプロセスを監視する処理はコルーチン関数である必要があるらしいので、
 `@asyncio.coroutine`を付けた関数を定義します。
