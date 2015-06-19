@@ -2,7 +2,7 @@
 layout: post
 category: tips
 tags: tips pebble tasker
-title:Taskerを使ってPebbleの通知を状況に応じて制御する
+title: Taskerを使ってPebbleの通知を状況に応じて制御する
 ---
 
 ## 概要
