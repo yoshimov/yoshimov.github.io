@@ -58,6 +58,13 @@ title: ２段階認証の端末の変更方法
 - Two factor authenticationのExpandを押す
 - 一旦Deactivateのリンクを選択して解除してから、再度設定し直す
 
+## Amazon Web Services
+
+- アカウントの認証情報を開く
+    - <https://console.aws.amazon.com/iam/home?#security_credential>
+- Multi-Factor Authentication(MFA)を選ぶ
+- 既存のデバイスは一旦無効にした後、仮想デバイスを追加する
+
 ## QuickAuthでの操作
 
 ついでにPebbleのQuickAuthの操作です。
