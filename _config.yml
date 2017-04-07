@@ -11,7 +11,7 @@ markdown: kramdown
 # related post index
 lsi: false
 encoding: utf-8
-theme: dinky
+theme: jekyll-theme-minimal
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
